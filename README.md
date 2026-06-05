@@ -68,6 +68,12 @@ However, experience has demonstrated several recurring challenges:
 * High operational complexity
 * Difficulty comparing proposals
 * Lack of structured strategic planning
+* Weak execution accountability for funded projects
+* Ambiguous budget phase boundaries under Net Change Limit (NCL) rounds
+
+Experience with budget allocation so far has exposed a recurring execution gap. Funded proposers have sometimes unilaterally redefined project scope or deliverables after approval, or failed to deliver agreed outcomes in part or entirely. When an independent administrator withheld milestone payments, that was appropriate — but when a proposer who declared themselves as administrator simply returned unspent funds shortly before applying in the next NCL round, the ecosystem gained little durable accountability. Partial repayment must not substitute for delivery. Non-delivery and unilateral scope changes should carry significant consequences for the proposer and for the next budget year — not a soft reset between flexible funding rounds.
+
+Treasury budget allocation today operates through NCL rounds rather than fixed annual cycles. Each NCL can be replaced by the next NCL at any time. In practice this provides little stable orientation for DReps, proposers, or administrators planning multi-quarter work. Participants struggle to know which budget envelope is active, when it ends, or how current commitments relate to the next round. The phase boundary is flexible rather than predictable, which adds confusion rather than useful structure.
 
 Many governance discussions focus on improving proposal assessment.
 
@@ -164,6 +170,8 @@ Participants should know:
 * When refinements and confirmations occur
 * When audits happen
 
+The current NCL-based approach illustrates the opposite: budget phases are not tied to a calendar year, and each round may supersede the previous one without a fixed handover. This proposal replaces that ambiguity with an explicit annual cycle so participants can plan, compare, and hold funded work accountable across a known budget year.
+
 This creates predictability. Everyone knows when decisions happen.
 
 ---
@@ -190,7 +198,7 @@ Success matters.
 
 Failure matters.
 
-The ecosystem should remember performance through transparent reputation systems.
+Partial fund returns, withheld milestone payouts, and voluntary repayments before a new funding round must not erase a poor delivery record. The ecosystem should remember performance through transparent reputation systems that carry forward into the next budget year.
 
 This creates accountability. Performance becomes visible over time.
 
@@ -266,6 +274,8 @@ This creates clarity. Strategic treasury planning does not interfere with protoc
 ---
 
 # Annual Governance Framework Selection
+
+The annual budget year in this model is deliberately fixed and calendar-aligned — in contrast to today's NCL rounds, which can be superseded at any time and offer little stable orientation for planning or accountability.
 
 At the beginning of Q4, anyone may submit a complete governance framework for the upcoming budget year. There is no appointed committee, working group, or coalition that pre-selects which frameworks DReps may choose from. A significant time-locked deposit should prevent spamming and flooding this phase. 
 
@@ -731,6 +741,9 @@ Factors may include:
 * Timely delivery
 * KPI achievement
 * Closure approval
+* Failed or partial delivery
+* Unilateral scope or deliverable changes after approval
+* Milestone withholdings, incomplete execution, or fund returns before re-applying
 * Budget class and project complexity
 
 Reputation must not be accumulated through volume alone. A vendor completing fifty micro-projects with minimal ecosystem value should not accumulate the same standing as a vendor delivering a single large infrastructure initiative.
@@ -753,7 +766,26 @@ The objective is measuring current trustworthiness rather than creating permanen
 
 Reputation affects eligibility, not voting power.
 
+Poor delivery should materially affect vendor standing, eligibility for larger budget classes, and DRep assessment when the same proposer returns in a later cycle. Returning unspent funds does not reset accountability — it is one signal within a persistent execution record.
+
 This creates accountability without creating governance aristocracies.
+
+---
+
+## Delivery Accountability
+
+Approved deliverables are commitments, not suggestions.
+
+Proposers must not unilaterally redefine scope, milestones, or KPIs after funding without a formal DRep-visible process. When delivery falls short, consequences must be meaningful for both the proposer and the next budget year:
+
+* Milestone-based treasury releases remain withheld until independent verification confirms delivery
+* Reputation and eligibility reflect partial failure, non-delivery, and post-approval scope changes
+* DReps can weigh execution history when the same vendor competes again — including in larger lanes or strategic categories
+* Voluntary repayment of unspent funds or self-administered milestone withholding does not clear the record before the next budget cycle
+
+When a proposer also acts as administrator, that dual role must not become a loophole: returning funds shortly before the next NCL or budget round must not substitute for delivering what was approved.
+
+This creates skin in the game. Execution failures follow the proposer into the next budget year rather than disappearing between flexible funding rounds.
 
 ---
 
@@ -1119,6 +1151,8 @@ No governance model is exploit-proof. The following risks are acknowledged and a
 | Reputation farming | Budget-class weighting, rolling time window, reputation cap, newcomer lanes |
 | Auditor capture | Rotation encouragement, competitive auditor markets, role separation |
 | Challenge abuse | Challenger credibility tracking, evidence requirements, finality after approval |
+| Weak delivery accountability | Milestone-based releases, auditor verification, delivery reputation, eligibility consequences across budget years, no reset via fund return alone |
+| Ambiguous budget phases (NCL) | Fixed annual framework cycle, known Q4 and quarterly decision calendar, explicit budget year boundaries |
 | Administrator overload | Capacity matching with flexibility tolerance, trust-based budget allocation |
 | Multi-year funding lock-in | Every phase competes independently, no implied future commitment |
 | Bureaucracy perception | Governance minimization, standardized process reducing DRep decision count |
