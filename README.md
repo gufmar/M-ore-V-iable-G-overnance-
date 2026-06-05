@@ -90,19 +90,28 @@ This creates scalability. DReps can focus on direction rather than administratio
 
 ---
 
-# Why This Is Less Governance, Not More
+# Decentralized Decisions, Not Central Planning
 
-Some readers may interpret annual frameworks, categories, budgets, and project slots as central planning — a government ministry running an annual budget and procurement process.
+Some readers may interpret annual frameworks, categories, sub-budgets, and project slots as central planning — reminiscent of a government ministry running an annual budget and procurement process.
 
-That is not the intent.
+That reaction is understandable. But it misreads what this concept to make Cardano governance more viable actually aims to be: decentralized governance with no central authority. This proposal should not introduce one.
 
-The objective is the opposite:
+The framework borrows elements from common procurement and administrative processes — because those patterns are effective and proved at scale — but arranges them so DReps retain decision-making options at every relevant stage of the annual sequence.
 
-* Less governance, not more control
-* More predictability, not more bureaucracy
-* More competition, not more gatekeeping
+The objective is not less governance. The objective is to apply familiar, effective operative and administrative processes in a decentralized way — without drowning treasury governance in chaotic inefficiency.
 
-Today, every treasury proposal effectively invents its own process. DReps must simultaneously evaluate strategy, budget, implementation quality, vendor track records, and administrative models — often from unstructured documents and forum threads.
+This means:
+
+* More predictability — a known annual sequence instead of ad-hoc timing
+* More competition — between frameworks, vendors, administrators, and auditors
+* Better comparability — proposals evaluated within a shared structure
+* Clearer decision layers — each vote answers one question at a time
+
+The problem today is not simply that every treasury proposal invents its own process. More often, completely different proposals appear at the same time and cannot be meaningfully compared. Worse, proposals that are broadly similar — and should be compared side by side — arrive with different structures, different conditions, or different assumptions, making fair evaluation difficult.
+
+DReps face a further constraint: once a proposer submits, DReps have up to six epochs to assess and vote — without knowing whether a stronger or better-structured proposal will appear soon after. Every vote carries uncertainty about what was missed or what is still coming.
+
+This concept aims to keep proposals aligned and structured so DReps can make better decisions. It achieves that through rules — but those rules do not act as central power. They define the playing field; the decisions themselves always remain in DReps' hands.
 
 Under this model:
 
@@ -111,7 +120,7 @@ Under this model:
 * DRep workload decreases because each decision layer answers one question at a time
 * Operational complexity moves into predefined rules rather than ad-hoc debate
 
-The structure exists to reduce the number of decisions DReps must make directly, not to expand the power of any single governance actor.
+The structure exists to reduce the number of unrelated questions DReps must reconcile at once, not to expand the power of any single governance actor.
 
 This creates simplicity. Structure replaces chaos rather than adding layers on top of it.
 
@@ -130,7 +139,11 @@ DReps should primarily decide:
 
 DReps should not be expected to manage projects directly.
 
-This creates clarity. Strategic decisions remain with voters.
+Strategic focus must not become an excuse for the proposing or administering side to take over how execution is defined and ruled. Proposers and administrators must not unilaterally set the operational terms the ecosystem must accept — including timelines, voting mechanisms, self-defined pre-elections, or alternative-less definitions and conditions embedded in their own submissions.
+
+Execution rules belong in the shared annual framework and constitutional guardrails, not in bespoke attachments to individual proposals. DReps vote on strategy and trust; they are not asked to rubber-stamp someone else's private process design.
+
+This creates clarity. Strategic decisions remain with voters; execution structure remains open to competition and DRep choice.
 
 ---
 
@@ -250,7 +263,7 @@ This creates clarity. Strategic treasury planning does not interfere with protoc
 
 # Annual Governance Framework Selection
 
-At the beginning of Q4, anyone may submit a complete governance framework for the upcoming budget year. There is no appointed committee, working group, or coalition that pre-selects which frameworks DReps may choose from.
+At the beginning of Q4, anyone may submit a complete governance framework for the upcoming budget year. There is no appointed committee, working group, or coalition that pre-selects which frameworks DReps may choose from. A significant time-locked deposit should prevent spamming and flooding this phase. 
 
 Framework authors compete openly. DReps assess the submitted frameworks and express ordered preferences through ranked voting. The framework receiving the strongest collective preference becomes active for the following budget year.
 
@@ -336,7 +349,7 @@ No role should be self-defining and unavoidable. The ecosystem must never arrive
 
 Every proposing side competes. Every deciding side votes. Neither side can permanently entrench itself outside constitutional guardrails.
 
-This creates balance. Strategic direction is chosen democratically without creating permanent, unchallengeable governance actors.
+This creates balance and resilience. Strategic direction is chosen democratically without creating permanent, unchallengeable governance actors, or risks from single actuators that suddenly become point of failures.
 
 ![Annual governance cycle](docs/diagrams/generated/annual-cycle.svg)
 
@@ -345,6 +358,10 @@ This creates balance. Strategic direction is chosen democratically without creat
 # Category Definition
 
 Each category functions as a temporary operational charter for a single budget year.
+
+Anyone proposing an annual framework — including its categories and their internal operational charters — must convince DReps to adopt it. DReps are not approving abstract design documents; they are choosing the rules, timelines, and decision sequences they will work within for the entire budget year. A framework that is confusing, burdensome, or poorly structured will struggle to win support, because DReps know they must live with the consequences.
+
+Any attempt to propose a framework that unilaterally predefines too much in certain directions — locking in outcomes, processes, or actors before DReps can meaningfully choose — will probably not win support. DReps will recognize that such designs directly limit their decision-making power, and will prefer frameworks that preserve competitive choice at each stage of the annual sequence.
 
 Categories may define:
 
@@ -372,6 +389,22 @@ Examples:
 * One large and two medium projects
 * Quarterly competitions
 * Continuous submission
+
+## Execution Cadence
+
+Category definitions may also specify how competition and allocation are spread across the budget year:
+
+* **Four quarterly rounds** — separate voting and funding in Q1, Q2, Q3, and Q4
+* **Two half-year periods** — separate voting and funding twice during the year
+* **One full-year round** — a single competition for the entire category budget
+
+This is a structural trade-off, not merely a scheduling preference.
+
+A category executed only once — for example, entirely in Q1 — is effectively a tender for exactly one winning and executed proposal. It suits a very concrete scope and deliverables description: one winner, one execution path, one budget envelope.
+
+The more a category is split into two or four parts, the more voting rounds it creates and the more winning proposals it can fund over the year. Each round draws from only a fraction of the total category budget. That mathematically caps the maximum amount any single winning proposal in that round can request.
+
+Framework proposers must convince DReps that their chosen cadence fits the category's purpose. DReps weigh whether they want one large, focused award or several smaller, recurring selection rounds with lower individual ceilings.
 
 ## Administration Requirements
 
@@ -947,6 +980,7 @@ Examples:
 * Trust allocation
 * Auditor registration
 * Milestone approvals
+* Structured discussion messages
 
 These standards should be usable by:
 
@@ -962,7 +996,20 @@ The governance process should never depend on a single website, organization, or
 
 Whenever possible, these processes should leverage native Cardano Layer 1 capabilities.
 
-This creates interoperability. Many tools can participate in a shared governance ecosystem.
+Governance discussion should not remain scattered across forums, social media, and unstructured threads. The business logic layer should define a simple, limited, structured format for placing comments near governance objects — including category proposals, annual framework proposals, and submitted challenges.
+
+DReps could submit short, size-limited messages designed to be easy to read at a glance. Each message would carry one of a small fixed set of types:
+
+* **Note** — context or observation without a directional signal
+* **Question** — a direct question to the proposer or challenge author
+* **Pro endorsement** — explicit supportive signal
+* **Con critique** — explicit critical signal
+
+Identified proposers may respond within the same thread. Both the number of messages and the size of each message would be capped. The goal is readable signal, not open-ended debate volume.
+
+The business logic layer should develop a data-availability approach for these messages: proposer- and DRep-signed short payloads, submitted according to a common schema and retrievable via an open API. This is not a centralized governance platform. Any wallet, explorer, portal, or app that implements the business logic layer specifications and message formats can display the same commentary alongside the same proposal — wherever participants choose to engage.
+
+This creates interoperability. Many tools can participate in a shared governance ecosystem — and the same signed, structured discussion travels with each governance object instead of disappearing inside one website.
 
 ---
 
