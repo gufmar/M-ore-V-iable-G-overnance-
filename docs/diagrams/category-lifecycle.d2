@@ -1,0 +1,80 @@
+# Category Lifecycle
+# All categories follow the same process but operate independently.
+
+direction: down
+
+classes: {
+  header: {
+    style.fill: "#EDE9FE"
+    style.stroke: "#7C3AED"
+    style.bold: true
+    style.font-size: 13
+  }
+  step: {
+    style.fill: "#FFFFFF"
+    style.stroke: "#A78BFA"
+    style.font-size: 12
+  }
+  vote: {
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.bold: true
+  }
+  option0: {
+    style.fill: "#FEF3C7"
+    style.stroke: "#D97706"
+    style.font-size: 11
+  }
+  outcome: {
+    style.fill: "#DCFCE7"
+    style.stroke: "#16A34A"
+    style.bold: true
+  }
+  execution: {
+    style.fill: "#F0FDF4"
+    style.stroke: "#16A34A"
+    style.font-size: 11
+  }
+}
+
+title: {
+  label: |md
+    # Category Lifecycle (per quarter, per lane)
+    *Example: Development · 35% of annual budget*
+  |
+  near: top-center
+  style.font-size: 18
+}
+
+budget: "Category Budget\n+ Funding Lane\n(e.g. Large / Medium / Small)" { class: header }
+
+compete: "Quarterly Competition" {
+  class: step
+  pa: "Proposal A" { class: step }
+  pb: "Proposal B" { class: step }
+  pc: "Proposal C" { class: step }
+  p0: "Option 0\nNo Award /\nTreasury Retention" { class: option0 }
+}
+
+initial: "Initial Preference Vote" { class: vote }
+winner: "Winning Proposal" { class: step }
+challenge: "Challenge Window\n(public · attributable · evidence-based)" { class: step }
+refine: "Refinement Phase\n(budget · deliverables · merge · clarify)" { class: step }
+confirm: "Final DRep Confirmation Vote\n(proposal · auditor · terms)" { class: vote }
+execute: "Execution\n(up to 12 months)" { class: step }
+
+m1: "Reviews" { class: execution }
+m2: "Payments" { class: execution }
+m3: "DRep quality feedback" { class: execution }
+
+closure: "Closure Vote" { class: vote }
+reputation: "Reputation Update\n(weighted by budget class)" { class: outcome }
+
+budget -> compete -> initial -> winner -> challenge -> refine -> confirm -> execute -> m1 -> m2 -> m3 -> closure -> reputation
+
+parallel: "Same process runs in parallel for:\nResearch · Development · Marketing · Business Dev · …" {
+  style.fill: "#F8FAFC"
+  style.stroke: "#CBD5E1"
+  style.font-size: 10
+  near: bottom-left
+}

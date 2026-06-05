@@ -1,0 +1,75 @@
+# Framework Selection Funnel
+# DReps vote on complete governance strategies, not individual percentages.
+
+direction: down
+
+classes: {
+  framework: {
+    style.fill: "#F0FDF4"
+    style.stroke: "#16A34A"
+    style.font-size: 12
+  }
+  component: {
+    style.fill: "#FFFFFF"
+    style.stroke: "#86EFAC"
+    style.font-size: 10
+  }
+  vote: {
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.bold: true
+    style.font-size: 13
+  }
+  result: {
+    style.fill: "#FEF3C7"
+    style.stroke: "#D97706"
+    style.bold: true
+    style.font-size: 13
+  }
+  disclosure: {
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-size: 10
+  }
+}
+
+title: {
+  label: |md
+    # Framework Selection Funnel
+    *Anyone may propose · DReps rank-vote · Full transparency required*
+  |
+  near: top-center
+  style.font-size: 18
+}
+
+fa: "Framework A" { class: framework }
+fb: "Framework B" { class: framework }
+fc: "Framework C" { class: framework }
+
+components: "Each framework includes:" {
+  class: component
+  cats: "Categories & scopes"
+  budget: "Budget allocations"
+  kpi: "KPIs"
+  admin: "Administration model"
+  audit: "Audit model"
+  cats -> budget -> kpi -> admin -> audit
+}
+
+disclosure: "Required for every proposer:\nidentity · interests · rationale · COIs\n(human + machine-readable template)" {
+  class: disclosure
+}
+
+vote: "DRep Ranked\nPreference Vote" { class: vote }
+winner: "Winning Framework\n(all categories active)" { class: result }
+active: "Budget Year\nOperational" { class: result }
+
+fa -> components
+fb -> components
+fc -> components
+components -> disclosure -> vote -> winner -> active
+
+note: "No committee pre-selects frameworks.\nAdministrator trust is voted separately (Q4)." {
+  class: disclosure
+  near: bottom-right
+}

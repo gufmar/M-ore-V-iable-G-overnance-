@@ -22,3 +22,6 @@ temp/
 
 # Local input (chat history, drafts, etc.)
 input/
+
+# Local tooling (d2 binary, etc.)
+.tools/

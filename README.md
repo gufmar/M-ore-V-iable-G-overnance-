@@ -142,7 +142,7 @@ Participants should know:
 
 * When framework proposals open (Q4)
 * When DReps rank-vote on the annual framework (Q4)
-* When administrator trust is reallocated (Q3 or Q4)
+* When administrator trust is reallocated (Q4)
 * When category projects compete (quarterly)
 * When refinements and confirmations occur
 * When audits happen
@@ -223,6 +223,8 @@ This separation allows the ecosystem to continuously adapt priorities and execut
 
 This creates flexibility. Strategy evolves while constitutional stability remains intact.
 
+![Distributed roles and power](docs/diagrams/generated/role-model.svg)
+
 ---
 
 # Separation From Other Governance Actions
@@ -251,6 +253,8 @@ This creates clarity. Strategic treasury planning does not interfere with protoc
 At the beginning of Q4, anyone may submit a complete governance framework for the upcoming budget year. There is no appointed committee, working group, or coalition that pre-selects which frameworks DReps may choose from.
 
 Framework authors compete openly. DReps assess the submitted frameworks and express ordered preferences through ranked voting. The framework receiving the strongest collective preference becomes active for the following budget year.
+
+![Framework selection funnel](docs/diagrams/generated/framework-funnel.svg)
 
 A framework proposal defines:
 
@@ -306,12 +310,12 @@ The model deliberately separates decision types across roles and timelines:
 | Decision | Who proposes | Who decides | When |
 | -------- | ------------ | ----------- | ---- |
 | Annual framework | Any participant (Q4 submission) | DReps via ranked preference vote | Q4, for the upcoming budget year |
-| Administrator trust | Administrators demonstrate performance | DReps via trust allocation vote | Q3 mid-year, or Q4 after current-year admin work is observable |
+| Administrator trust | Administrators demonstrate performance | DReps via trust allocation vote | Q4, after current-year admin work is observable |
 | Treasury guardrails | Constitutional amendment process | Existing constitutional governance | Any time, independent of the annual budget cycle |
 | Category projects | Vendors | DReps via quarterly preference votes | Throughout the budget year |
 | Auditors | Auditors register and offer services | DReps at final project confirmation | Per project, after refinement |
 
-Administrator trust allocation is intentionally timed for direct feedback. DReps observe how administrators performed during the current budget year before allocating trust for the next. A Q3 vote allows mid-year correction; a Q4 vote allows assessment after most administrative work for the year is complete. Either timing refreshes trust allocation before the new budget year begins.
+Administrator trust allocation is intentionally timed for direct feedback at year-end. DReps observe how administrators performed during the current budget year before allocating trust for the next. The Q4 vote takes place after most administrative work for the year is complete and refreshes trust allocation before the new budget year begins.
 
 Treasury guardrail parameters — spending limits, runway requirements, emergency reserves — belong to the Constitution. They are amended through the standard constitutional process and may be initiated at any time. They are not aligned with, dependent on, or part of the annual budget framework selection.
 
@@ -333,6 +337,8 @@ No role should be self-defining and unavoidable. The ecosystem must never arrive
 Every proposing side competes. Every deciding side votes. Neither side can permanently entrench itself outside constitutional guardrails.
 
 This creates balance. Strategic direction is chosen democratically without creating permanent, unchallengeable governance actors.
+
+![Annual governance cycle](docs/diagrams/generated/annual-cycle.svg)
 
 ---
 
@@ -499,6 +505,8 @@ Some readers may assume that declaring a multi-year initiative secures a funding
 
 This creates transparency. Long-term commitments become visible without binding future treasury decisions.
 
+![Category lifecycle](docs/diagrams/generated/category-lifecycle.svg)
+
 ---
 
 # Refinement and Confirmation
@@ -520,6 +528,8 @@ During this phase:
 * Risks reduced
 
 After refinement, a second DRep confirmation vote is required.
+
+This confirmation vote is integral — it ratifies the refined proposal together with the responsible auditor or auditor set and final funding terms. Auditor selection is not a separate step after DRep approval.
 
 Only proposals achieving the required support threshold after refinement become eligible for funding.
 
@@ -740,7 +750,7 @@ Examples:
 
 ## DRep Trust Allocation
 
-DReps allocate trust across administrators separately from the Q4 framework selection vote. This vote typically occurs in Q3 — allowing mid-year correction based on observed performance — or in Q4, once most administrative work for the current budget year is complete and DReps can assess quality before the next year begins.
+DReps allocate trust across administrators separately from the Q4 framework selection vote. This vote occurs in Q4, once most administrative work for the current budget year is complete and DReps can assess quality before the next year begins.
 
 The refreshed trust allocation takes effect at the start of the upcoming budget year.
 
@@ -806,7 +816,13 @@ Examples:
 * Percentage fee
 * Milestone fee
 
-When proposals receive final approval, DReps may also approve the responsible auditor or auditor set.
+Auditors register and offer services before the confirmation vote. DReps approve the responsible auditor or auditor set as part of the final confirmation vote — together with the refined proposal and funding terms.
+
+During execution, milestone cycles include:
+
+* Reviews (delivery and KPI verification by auditors)
+* Payments (milestone-based treasury releases)
+* DRep quality feedback (ongoing performance signals for closure and reputation)
 
 ---
 
@@ -869,6 +885,8 @@ Unused budgets return to the treasury.
 No category is required to spend its entire allocation.
 
 This creates sustainability. Treasury longevity becomes a design goal.
+
+![Treasury flow](docs/diagrams/generated/treasury-flow.svg)
 
 ---
 
@@ -1044,7 +1062,7 @@ No governance model is exploit-proof. The following risks are acknowledged and a
 | Risk | Safeguard |
 | ---- | --------- |
 | Framework capture | Open Q4 submission by anyone, ranked DRep preference vote, mandatory proposer disclosure template, annual reset |
-| Concentrated governance power | Separated decision timelines (Q4 framework, Q3/Q4 admin trust, constitutional guardrails anytime), competing proposer roles |
+| Concentrated governance power | Separated decision timelines (Q4 framework, Q4 admin trust, Q3 budget adjustment, constitutional guardrails anytime), competing proposer roles |
 | Self-defining monopoly roles | No alternativeless administrators or auditors; all proposing sides compete within constitutional guardrails |
 | Category / tender capture | Outcome-based definitions, public challenge periods, DRep framework selection |
 | Reputation farming | Budget-class weighting, rolling time window, reputation cap, newcomer lanes |
@@ -1093,3 +1111,10 @@ Treasury funds compete against treasury retention.
 And governance becomes increasingly understandable for ADA holders, ecosystem contributors, companies, and future generations of participants.
 
 This creates a governance system capable not only of decentralization, but of long-term scale.
+
+---
+
+## Further Reading
+
+* [Preference Voting Methods](docs/preference-voting.md) — Ranked Choice, Condorcet, and Schulze explained
+* [Governance Diagrams](docs/diagrams.md) — how illustrations are authored, regenerated, and verified in CI

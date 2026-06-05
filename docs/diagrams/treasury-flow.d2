@@ -1,0 +1,93 @@
+# Treasury Flow
+# Spending must compete against retention.
+
+direction: down
+
+classes: {
+  treasury: {
+    style.fill: "#FEF3C7"
+    style.stroke: "#D97706"
+    style.bold: true
+    style.font-size: 14
+  }
+  guardrail: {
+    style.fill: "#FEE2E2"
+    style.stroke: "#DC2626"
+    style.font-size: 11
+  }
+  framework: {
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.font-size: 12
+  }
+  category: {
+    style.fill: "#F0FDF4"
+    style.stroke: "#16A34A"
+    style.font-size: 11
+  }
+  option0: {
+    style.fill: "#EDE9FE"
+    style.stroke: "#7C3AED"
+    style.bold: true
+    style.font-size: 12
+  }
+  return: {
+    style.fill: "#DCFCE7"
+    style.stroke: "#16A34A"
+    style.font-size: 11
+  }
+  constitutional: {
+    style.fill: "#F8FAFC"
+    style.stroke: "#94A3B8"
+    style.font-size: 10
+  }
+}
+
+title: {
+  label: |md
+    # Treasury Flow
+    *Every spend competes against retention · Unused funds return*
+  |
+  near: top-center
+  style.font-size: 18
+}
+
+treasury: "Cardano Treasury" { class: treasury }
+
+guardrails: "Constitutional Guardrails\n(max spend · runway · reserves · growth limits)" {
+  class: guardrail
+
+  amended: "Amended via constitutional process\n(independent of annual budget cycle)" {
+    class: constitutional
+  }
+}
+
+annual: "Annual Framework\n(Q4 selection)" {
+  class: framework
+  alloc: "Category budget\nallocations (%)" { class: framework }
+}
+
+categories: "Category Budgets" {
+  class: category
+  dev: "Development\n35%" { class: category }
+  res: "Research\n25%" { class: category }
+  mkt: "Marketing\n10%" { class: category }
+  other: "Other categories\n…" { class: category }
+}
+
+competition: "Quarterly Competitions\n(within funding lanes)" {
+  class: category
+}
+
+option0: "Option 0\nNo Award /\nTreasury Retention" { class: option0 }
+
+funded: "Funded Projects\n(milestone payments)" { class: category }
+unused: "Unused Category Budget\nreturns to treasury" { class: return }
+retained: "Retained Funds\n(no award wins)" { class: return }
+
+treasury -> guardrails -> annual -> categories -> competition
+competition -> funded: "proposal wins"
+competition -> option0: "always on ballot"
+option0 -> retained -> treasury
+funded -> unused -> treasury
+competition -> unused: "no quality proposals"

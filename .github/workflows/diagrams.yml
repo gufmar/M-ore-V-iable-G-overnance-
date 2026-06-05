@@ -1,0 +1,32 @@
+name: Generate diagrams
+
+on:
+  push:
+    paths:
+      - "docs/diagrams/**"
+      - "scripts/generate-diagrams.*"
+      - ".github/workflows/diagrams.yml"
+  pull_request:
+    paths:
+      - "docs/diagrams/**"
+  workflow_dispatch:
+
+jobs:
+  d2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install D2
+        run: curl -fsSL https://d2lang.com/install.sh | sh -s --
+
+      - name: Generate SVGs
+        run: bash scripts/generate-diagrams.sh
+
+      - name: Verify generated SVGs are committed
+        run: |
+          if ! git diff --exit-code docs/diagrams/generated/; then
+            echo "::error::Diagram sources changed but SVGs are out of date."
+            echo "Run: ./scripts/generate-diagrams.ps1  (or scripts/generate-diagrams.sh)"
+            exit 1
+          fi

@@ -1,0 +1,105 @@
+# Annual Governance Cycle — compact vertical timeline
+
+direction: down
+
+classes: {
+  phase: {
+    style.fill: "#E8F4FD"
+    style.stroke: "#1E6BB8"
+    style.bold: true
+    style.font-size: 13
+  }
+  step: {
+    style.fill: "#FFFFFF"
+    style.stroke: "#94A3B8"
+    style.font-size: 11
+  }
+  milestone: {
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.bold: true
+    style.font-size: 12
+  }
+  highlight: {
+    style.fill: "#FEF3C7"
+    style.stroke: "#D97706"
+    style.font-size: 11
+  }
+  note: {
+    style.fill: "#F8FAFC"
+    style.stroke: "#CBD5E1"
+    style.font-size: 10
+    style.italic: true
+  }
+  recurring: {
+    style.fill: "#F0FDF4"
+    style.stroke: "#16A34A"
+    style.font-size: 11
+  }
+  cycle: {
+    style.stroke: "#2563EB"
+    style.stroke-dash: 4
+    style.font-size: 10
+  }
+  inner: {
+    style.stroke: "#16A34A"
+    style.stroke-dash: 3
+    style.font-size: 10
+  }
+}
+
+title: |md
+  # Annual Governance Cycle
+  *Strategy once · Execution all year*
+| { class: phase; near: top-center }
+
+# --- Q4 framework selection (previous year) ---
+
+q4: "Q4 · Framework Selection" { class: phase }
+q4 -> s1 -> s2 -> s3 -> s4
+
+s1: "Open proposals" { class: step }
+s2: "Campaign" { class: step }
+s3: "DRep ranked vote" { class: step }
+s4: "Framework active" { class: milestone }
+
+# --- Budget year ---
+
+start: "Budget year starts" { class: milestone }
+s4 -> start
+
+loop: "Each quarter Q1–Q4" { class: recurring }
+start -> loop -> l1 -> l2 -> l3
+
+l1: "Category competitions" { class: step }
+l2: "Refinement & confirmation" { class: step }
+l3: "Audits & delivery" { class: step }
+
+# Inner quarterly loop — regular work and Q3 extras return here
+
+nq: "Next quarter" { class: step }
+l3 -> nq -> loop: "↻" { class: inner }
+
+q3x: "Q3 extras" { class: phase }
+loop -> q3x -> q3b
+
+q3b: "Budget adjust (±guardrails)" { class: step }
+q3b -> nq
+
+# Q4 extras exits the inner loop — year-end only
+
+q4x: "Q4 extras" { class: phase }
+loop -> q4x -> q4a
+
+q4a: "Admin trust vote" { class: highlight }
+q4a -> prep
+
+prep: "Next budget year\npreparations" { class: milestone }
+
+# Outer annual cycle closes at the top
+prep -> q4: "↻ cycle continues" { class: cycle }
+
+note: "Constitutional treasury guardrails\namend separately · any time" {
+  class: note
+  near: bottom-center
+}

@@ -1,0 +1,100 @@
+# Roles & Responsibilities
+# Competing proposers on one side · DReps and delegators on the other.
+
+direction: right
+
+classes: {
+  constitutional: {
+    style.fill: "#FEF3C7"
+    style.stroke: "#D97706"
+    style.bold: true
+    style.font-size: 13
+  }
+  proposer: {
+    style.fill: "#F0FDF4"
+    style.stroke: "#16A34A"
+    style.font-size: 12
+  }
+  decider: {
+    style.fill: "#DBEAFE"
+    style.stroke: "#2563EB"
+    style.font-size: 12
+  }
+  role: {
+    style.fill: "#FFFFFF"
+    style.stroke: "#94A3B8"
+    style.font-size: 11
+  }
+  rule: {
+    style.fill: "#F8FAFC"
+    style.stroke: "#CBD5E1"
+    style.font-size: 10
+  }
+}
+
+title: {
+  label: |md
+    # Distributed Roles & Power
+    *No alternativeless, self-defining entities*
+  |
+  near: top-center
+  style.font-size: 18
+}
+
+constitution: "Constitutional Layer\n(timelines · roles · guardrails · accountability)" {
+  class: constitutional
+}
+
+proposing: "Proposing Side\n(compete)" {
+  class: proposer
+
+  framework: "Framework\nDesigners" {
+    class: role
+    f1: "Complete annual\nstrategies" { class: role }
+    f2: "Disclosure template\n(identity · COI · rationale)" { class: role }
+  }
+
+  vendor: "Vendors" {
+    class: role
+    v1: "Project proposals\nwithin category lanes" { class: role }
+    v2: "Transparency levels\n+ reputation" { class: role }
+  }
+
+  admin: "Administrators" {
+    class: role
+    a1: "Operational support\n(milestones · reporting)" { class: role }
+    a2: "Compete for DRep trust\n(not proposer fees)" { class: role }
+  }
+
+  auditor: "Auditors" {
+    class: role
+    au1: "Register expertise\n+ pricing" { class: role }
+    au2: "Independent milestone\nverification" { class: role }
+  }
+}
+
+deciding: "Deciding Side\n(vote)" {
+  class: decider
+
+  drep: "DReps" {
+    class: role
+    d1: "Framework preference\n(Q4)" { class: role }
+    d2: "Category preference\n(quarterly)" { class: role }
+    d3: "Admin trust allocation\n(Q4)" { class: role }
+    d4: "Final confirmation\n+ closure" { class: role }
+  }
+
+  delegator: "ADA Holders\n(delegators)" {
+    class: role
+    h1: "Choose DReps\nby expertise & signals" { class: role }
+  }
+}
+
+constitution -> proposing: "guardrails"
+constitution -> deciding: "guardrails"
+proposing -> deciding: "compete for approval"
+
+rules: "Separation rules:\n· No self-defining monopoly roles\n· No same entity as vendor + admin + auditor in one category\n· Treasury guardrails amended separately from annual budget" {
+  class: rule
+  near: bottom-center
+}
