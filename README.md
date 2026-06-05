@@ -450,9 +450,13 @@ DReps should be able to express ordered preferences between competing options.
 
 Possible implementations include:
 
-* Ranked Choice Voting
-* Condorcet
-* Schulze
+* [Ranked Choice Voting](docs/preference-voting.md#method-1-ranked-choice-voting-rcv--instant-runoff) (Instant Runoff)
+* [Condorcet methods](docs/preference-voting.md#method-2-condorcet-methods)
+* [Schulze method](docs/preference-voting.md#method-3-schulze-method)
+
+See [Preference Voting Methods](docs/preference-voting.md) for a detailed comparison of how these methods work, when to use each, and recommended implementation phases.
+
+Preference voting applies to multi-option decisions such as Q4 framework selection and quarterly category competitions. Administrator trust allocation uses weighted distribution, not winner-take-all ranking. Post-refinement confirmation votes on a single proposal may remain threshold-based.
 
 If native support is unavailable initially, off-chain systems such as Ekklesia may provide a transition path or become a permanent off-chain mechanism.
 
