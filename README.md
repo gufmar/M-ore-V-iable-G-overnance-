@@ -50,6 +50,10 @@ This creates a path from governance experimentation toward governance maturity.
 
 ---
 
+![More Viable governance concept view](docs/diagrams/moreViableGovernance_2026-06-05.png)
+
+---
+
 # Why Change?
 
 The current governance framework successfully enables treasury spending.
