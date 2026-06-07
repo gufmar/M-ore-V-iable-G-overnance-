@@ -1,8 +1,50 @@
 # Strategic Budget Governance for Cardano
 
-## A Proposal for Scalable Treasury Governance
+## A Proposal for Scalable, Cost-Effective Treasury Governance
 
 ---
+
+## Overview
+
+Cardano treasury governance works. The next step is making it **scalable and cost-effective** — so DReps decide direction without absorbing every operational role, and treasury spending consistently delivers ecosystem value for the funds committed.
+
+At a high level, this concept proposes:
+
+* **Set annual priorities and categories first** — DReps choose a strategic framework for the budget year, not hundreds of unrelated proposals at once
+* **Run competitive procurement inside those categories** — vendors compete within shared scopes, lanes, and KPIs
+* **Make proposals comparable** — structured templates with human-readable narrative and machine-readable fields
+* **Require strong disclosure** — conflicts of interest and third-party relationships declared before votes
+* **Always include treasury retention** — Option 0 (no award) competes with every funding decision
+* **Separate roles** — strategists (DReps), executors (vendors), operators (administrators), verifiers (auditors) under constitutional guardrails
+
+The sections below develop this into a full operational model. For adoption timing, pilot options, staged rollout, and collaborative next steps, see [Path Forward](docs/path-forward.md).
+
+---
+
+## About This Document
+
+This README is a **raw concept draft** — concrete enough to test whether experienced DReps would support a fundamental rethink of treasury governance, yet intentionally incomplete in operational detail.
+
+**Collaborative drafting is the main goal of this project.** The author prepared this text to open discussion, not to deliver a finished reform. If the direction finds support, the next stage should bring more DReps directly into workshops, review, and fine-tuning.
+
+**Two-tier presentation:** the Overview above orients new readers; the narrative below walks from motivation through design to adoption. [Document Structure](docs/document-structure.md) explains how this material may split into separate files as the concept matures.
+
+---
+
+## Document Guide
+
+| Part | Sections |
+| ---- | -------- |
+| **I — Context** | [DRep Summary](#drepresentative-summary) · [Why Change?](#why-change) · [Decentralized Decisions](#decentralized-decisions-not-central-planning) |
+| **II — Principles** | [Core Principles](#core-principles) · [Constitutional vs Operational](#constitutional-layer-vs-operational-layer) · [Scope](#separation-from-other-governance-actions) |
+| **III — Annual Model** | [Framework Selection](#annual-governance-framework-selection) · [Categories](#category-definition) · [Governance as Data](#governance-as-data) · [Preference Voting](#preference-voting) · [Quarterly Competitions](#quarterly-category-competitions) · [Refinement & Challenges](#refinement-and-confirmation) |
+| **IV — Roles** | [Vendors](#vendors) · [Administrators](#administrators) · [Auditors](#auditors) |
+| **V — Treasury & Infrastructure** | [Lobbying](#lobbying-transparency) · [Treasury Protection](#treasury-protection) · [Business Logic Layer](#governance-business-logic-layer) · [Governance Minimization](#governance-minimization) |
+| **VI — Adoption** | [Transition](#transition-opportunity) · [Benefits](#benefits-by-participant) · [Risks](#risks-and-safeguards) · [Conclusion](#conclusion) |
+
+---
+
+# Part I — Context and Motivation
 
 # DRepresentative Summary
 
@@ -12,13 +54,15 @@ The introduction of DReps, constitutional governance, treasury withdrawals, and 
 
 The next challenge is no longer decentralization.
 
-The next challenge is scalability.
+The next challenge is scalability — and responsible stewardship of treasury funds.
 
 How can thousands of ADA holders, hundreds of DReps, administrators, auditors, vendors, and future ecosystem participants make strategic decisions without drowning in operational complexity?
 
 How can treasury governance become understandable not only for governance specialists, but also for ordinary ADA holders, ecosystem contributors, companies, and future partners?
 
 How can governance retain flexibility while improving accountability?
+
+How can every ADA spent from the treasury create clear, measurable value for the ecosystem?
 
 This proposal suggests that Cardano should begin evolving from a proposal-centric governance model toward a strategic budget governance model inspired by lessons from:
 
@@ -41,10 +85,11 @@ The result is intended to create a governance system that becomes:
 * Easier to audit
 * Easier to automate
 * Easier to scale
+* More disciplined about value for money
 
 The objective is not to replace Cardano governance.
 
-The objective is to provide a more structured and scalable framework for treasury-funded ecosystem development.
+The objective is to provide a more structured, scalable, and cost-effective framework for treasury-funded ecosystem development — where spending is justified by outcomes, not by activity alone.
 
 This creates a path from governance experimentation toward governance maturity.
 
@@ -108,6 +153,8 @@ That reaction is understandable. But it misreads what this concept to make Carda
 
 The framework borrows elements from common procurement and administrative processes — because those patterns are effective and proved at scale — but arranges them so DReps retain decision-making options at every relevant stage of the annual sequence.
 
+See [Procurement & Budget Process Comparison](docs/procurement-comparison.md) for how typical business and public procurement elements map to this framework across jurisdictions such as the USA, Germany, Italy, UK, India, Japan, and Ethiopia.
+
 The objective is not less governance. The objective is to apply familiar, effective operative and administrative processes in a decentralized way — without drowning treasury governance in chaotic inefficiency.
 
 This means:
@@ -134,7 +181,11 @@ The structure exists to reduce the number of unrelated questions DReps must reco
 
 This creates simplicity. Structure replaces chaos rather than adding layers on top of it.
 
+The objective is a **fairer and more realistic procurement system** for treasury-funded work — balancing ecosystem needs, DRep oversight, and competitive delivery. Rules should not favor incumbents by default, nor extend vendor runway beyond what approved deliverables justify. Outcome-based categories, Option 0, structured comparison, and execution accountability serve that balance. Wording throughout this document aims to describe structural incentives rather than attribute bad faith to any participant.
+
 ---
+
+# Part II — Principles and Architecture
 
 # Core Principles
 
@@ -151,7 +202,7 @@ DReps should not be expected to manage projects directly.
 
 Strategic focus must not become an excuse for the proposing or administering side to take over how execution is defined and ruled. Proposers and administrators must not unilaterally set the operational terms the ecosystem must accept — including timelines, voting mechanisms, self-defined pre-elections, or alternative-less definitions and conditions embedded in their own submissions.
 
-Execution rules belong in the shared annual framework and constitutional guardrails, not in bespoke attachments to individual proposals. DReps vote on strategy and trust; they are not asked to rubber-stamp someone else's private process design.
+Execution rules belong in the shared annual framework and constitutional guardrails, not in bespoke attachments to individual proposals. DReps vote on strategy and trust; they should not be asked to approve process designs that proposers define unilaterally in their own submissions.
 
 This creates clarity. Strategic decisions remain with voters; execution structure remains open to competition and DRep choice.
 
@@ -198,7 +249,7 @@ Success matters.
 
 Failure matters.
 
-Partial fund returns, withheld milestone payouts, and voluntary repayments before a new funding round must not erase a poor delivery record. The ecosystem should remember performance through transparent reputation systems that carry forward into the next budget year.
+Partial fund returns, withheld milestone payouts, and voluntary repayments before a new funding round must not erase a poor delivery record. The ecosystem should remember performance through transparent reputation systems that carry forward into the next budget year. Full reputation mechanics may follow in a later phase once core procurement flow is stable (see [Path Forward](docs/path-forward.md)).
 
 This creates accountability. Performance becomes visible over time.
 
@@ -256,22 +307,17 @@ This creates flexibility. Strategy evolves while constitutional stability remain
 
 This proposal only addresses treasury and budget governance.
 
-Other governance actions remain unaffected.
+Other governance actions remain unaffected and continue through their existing processes — for example constitutional amendments, informational actions, parameter changes, and hard fork governance actions.
 
-Examples include:
-
-* Constitutional amendments
-* Informational actions
-* Parameter changes
-* Hard fork governance actions
-
-These may continue at any time through their existing processes.
+Those other governance action types face **their own challenges** (including technical review capacity, expert assessment, and decision clarity). They may also need fundamental improvement over time. That work is **outside the main scope of this project**, which focuses on treasury allocation and budget governance architecture. Acknowledging those gaps does not dilute this proposal; it clarifies where attention is directed.
 
 Budget governance should be viewed as a specialized governance layer focused on treasury allocation.
 
-This creates clarity. Strategic treasury planning does not interfere with protocol governance.
+This creates clarity. Strategic treasury planning does not interfere with protocol governance, while parallel improvements to other governance types can proceed independently.
 
 ---
+
+# Part III — Annual Budget Model
 
 # Annual Governance Framework Selection
 
@@ -444,7 +490,7 @@ Proposers compete by offering:
 
 DReps indirectly approve this procurement model when selecting the annual framework containing such categories.
 
-Tender-based categories carry a specific abuse risk. A category definition that prescribes a particular implementation — "build feature X using architecture Y within six months" — may appear neutral while secretly favoring one vendor's existing solution.
+Tender-based categories carry a specific design risk. A category definition that prescribes a particular implementation — "build feature X using architecture Y within six months" — may appear neutral while disproportionately favoring one vendor's existing solution.
 
 Wherever possible, tender categories should define **outcomes** rather than **implementations**:
 
@@ -460,7 +506,7 @@ not:
 
 Governments struggle with this constantly. Outcome-based definitions preserve competitive fairness while still allowing structured procurement when DReps explicitly choose it.
 
-This creates flexibility. Categories can range from open innovation to highly structured procurement without becoming vendor-specific traps.
+This creates flexibility. Categories can range from open innovation to highly structured procurement without becoming vendor-specific lock-in.
 
 ---
 
@@ -508,6 +554,10 @@ Possible implementations include:
 * [Schulze method](docs/preference-voting.md#method-3-schulze-method)
 
 See [Preference Voting Methods](docs/preference-voting.md) for a detailed comparison of how these methods work, when to use each, and recommended implementation phases.
+
+**Time-weighted preference** may complement ranked voting for some decisions: delegation or vote weight that reflects sustained participation over time can reduce short-term campaigning and reward long-term engagement. This is noted as a possible extension, not a requirement for first adoption.
+
+The voting layer should stay **narrow and fit-for-purpose**. Cardano needs methods that work reliably for multi-option treasury decisions and balance stakeholder power — not an open arena for every experimental mechanism (seeking a trial ground). New methods should enter only when they solve a clearly identified gap in the core set above. See [Path Forward](docs/path-forward.md) for phased rollout.
 
 Preference voting applies to multi-option decisions such as Q4 framework selection and quarterly category competitions. Administrator trust allocation uses weighted distribution, not winner-take-all ranking. Post-refinement confirmation votes on a single proposal may remain threshold-based.
 
@@ -610,7 +660,7 @@ Only fraud, deception, contractual breaches, or similar serious issues may reope
 
 ## Challenger Credibility
 
-Competitors may file nuisance challenges to delay stronger proposals — submitting many weak objections to create noise rather than insight.
+Competitors may file repeated low-substance challenges to delay stronger proposals — submitting many weak objections to create noise rather than insight.
 
 The challenge system should therefore track challenger credibility over time:
 
@@ -709,6 +759,8 @@ This creates scalability. Humans focus on judgment while tools assist with analy
 
 ---
 
+# Part IV — Roles and Accountability
+
 # Vendors
 
 ## Transparent Identity
@@ -734,6 +786,8 @@ Higher budget classes may require higher transparency.
 ## Vendor Reputation
 
 Reputation is earned through execution.
+
+This module is central to long-term accountability but need not block first adoption. A practical path is to **integrate reputation as staged evolution in year 2+** once the core annual framework, structured procurement, and delivery verification are operating. See [Path Forward](docs/path-forward.md).
 
 Factors may include:
 
@@ -783,7 +837,7 @@ Proposers must not unilaterally redefine scope, milestones, or KPIs after fundin
 * DReps can weigh execution history when the same vendor competes again — including in larger lanes or strategic categories
 * Voluntary repayment of unspent funds or self-administered milestone withholding does not clear the record before the next budget cycle
 
-When a proposer also acts as administrator, that dual role must not become a loophole: returning funds shortly before the next NCL or budget round must not substitute for delivering what was approved.
+When a proposer also acts as administrator, that dual role must not become a path to avoid delivery accountability: returning funds shortly before the next NCL or budget round must not substitute for delivering what was approved.
 
 This creates skin in the game. Execution failures follow the proposer into the next budget year rather than disappearing between flexible funding rounds.
 
@@ -910,6 +964,8 @@ Rotation need not be mandatory initially, but the constitutional layer should di
 This creates verification markets. Expertise becomes transparent and competitive.
 
 ---
+
+# Part V — Treasury and Infrastructure
 
 # Lobbying Transparency
 
@@ -1068,6 +1124,8 @@ This creates scalability. Human attention is reserved for high-value decisions.
 
 ---
 
+# Part VI — Adoption and Review
+
 # Transition Opportunity
 
 The upcoming Q4 cycle presents an opportunity to begin experimenting with this model.
@@ -1083,6 +1141,8 @@ Initial adoption could include:
 * Off-chain preference voting through Ekklesia
 
 The ecosystem can evaluate the approach incrementally while preserving existing governance mechanisms.
+
+Alternatively, the ecosystem may choose a **limited pilot** before broader adoption — or proceed directly toward full framework integration. Each path carries different timing and participation risks. See [Path Forward](docs/path-forward.md) for pilot design considerations, staged modules (including reputation in year 2+), collaborative drafting next steps, and legal SME review timing.
 
 This creates a practical path forward. Evolution becomes possible without disruption.
 
@@ -1156,6 +1216,9 @@ No governance model is exploit-proof. The following risks are acknowledged and a
 | Administrator overload | Capacity matching with flexibility tolerance, trust-based budget allocation |
 | Multi-year funding lock-in | Every phase competes independently, no implied future commitment |
 | Bureaucracy perception | Governance minimization, standardized process reducing DRep decision count |
+| Legal and liability alignment | SME legal review once basic architecture earns support; roles and records designed with counsel before constitutional hardening (see [Path Forward](docs/path-forward.md)) |
+| Pilot not representative | Design pilot as serious test with success criteria; avoid permanent parallel optional lane (see [Path Forward](docs/path-forward.md)) |
+| Status quo entrenchment during pilot | Account for full-year pilot cycle plus review before broader reform decision |
 
 The strongest protection is architectural: by asking what decisions DReps should make at all, the model reduces attack surface rather than optimizing voting mechanics alone.
 
@@ -1182,6 +1245,7 @@ A more sustainable path may be to redesign treasury governance around:
 * Transparent accountability
 * Institutional memory
 * Governance minimization
+* Value for treasury spend
 
 DReps focus on direction.
 
@@ -1195,11 +1259,16 @@ Treasury funds compete against treasury retention.
 
 And governance becomes increasingly understandable for ADA holders, ecosystem contributors, companies, and future generations of participants.
 
-This creates a governance system capable not only of decentralization, but of long-term scale.
+If this direction earns support, the next step is collaborative refinement with more DReps — not treating this document as a final blueprint.
+
+This creates a governance system capable not only of decentralization, but of long-term scale and responsible use of shared treasury resources.
 
 ---
 
 ## Further Reading
 
+* [Path Forward](docs/path-forward.md) — collaborative drafting, pilot vs full adoption, staged modules, legal review timing
+* [Document Structure](docs/document-structure.md) — how to read this repo and future doc splits
+* [Procurement & Budget Process Comparison](docs/procurement-comparison.md) — typical business and public procurement elements, rules, and jurisdictional anchors
 * [Preference Voting Methods](docs/preference-voting.md) — Ranked Choice, Condorcet, and Schulze explained
 * [Governance Diagrams](docs/diagrams.md) — how illustrations are authored, regenerated, and verified in CI

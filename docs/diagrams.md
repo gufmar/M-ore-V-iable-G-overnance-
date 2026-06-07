@@ -12,6 +12,7 @@ The principle matches the governance model itself: human-readable source → mac
 docs/
 ├── diagrams.md              ← this file
 ├── preference-voting.md
+├── procurement-comparison.md
 └── diagrams/
     ├── annual-cycle.d2
     ├── category-lifecycle.d2
