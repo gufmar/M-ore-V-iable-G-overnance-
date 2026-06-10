@@ -92,7 +92,7 @@ This creates a path from governance experimentation toward governance maturity.
 
 ---
 
-![More Viable governance concept view](docs/diagrams/moreViableGovernance_2026-06-05.png)
+![More Viable governance concept view](docs/diagrams/moreViableGovernance_sticks-usecases.png)
 
 ---
 
@@ -305,7 +305,7 @@ This separation allows the ecosystem to continuously adapt priorities and execut
 
 This creates flexibility. Strategy evolves while constitutional stability remains intact.
 
-![Distributed roles and power](docs/diagrams/generated/role-model.svg)
+![Distributed roles and power](docs/diagrams/generated/role-model_proposer-dreps.svg)
 
 ---
 
@@ -399,6 +399,8 @@ Administrator trust allocation is intentionally timed for direct feedback at yea
 Treasury guardrail parameters - spending limits, runway requirements, emergency reserves - belong to the Constitution. They are amended through the standard constitutional process and may be initiated at any time. They are not aligned with, dependent on, or part of the annual budget framework selection.
 
 This creates adaptability. The ecosystem can evolve without redesigning governance itself.
+
+![More Viable governance concept view](docs/diagrams/moreViableGovernance_2026-06-05.png)
 
 ---
 
