@@ -1,4 +1,4 @@
-# Annual Governance Cycle — compact vertical timeline
+# Annual Governance Cycle - compact vertical timeline
 
 direction: down
 
@@ -68,14 +68,14 @@ s4: "Framework active" { class: milestone }
 start: "Budget year starts" { class: milestone }
 s4 -> start
 
-loop: "Each quarter Q1–Q4" { class: recurring }
+loop: "Each quarter Q1-Q4" { class: recurring }
 start -> loop -> l1 -> l2 -> l3
 
 l1: "Category competitions" { class: step }
 l2: "Refinement & confirmation" { class: step }
 l3: "Audits & delivery" { class: step }
 
-# Inner quarterly loop — regular work and Q3 extras return here
+# Inner quarterly loop - regular work and Q3 extras return here
 
 nq: "Next quarter" { class: step }
 l3 -> nq -> loop: "↻" { class: inner }
@@ -86,7 +86,7 @@ loop -> q3x -> q3b
 q3b: "Budget adjust (±guardrails)" { class: step }
 q3b -> nq
 
-# Q4 extras exits the inner loop — year-end only
+# Q4 extras exits the inner loop - year-end only
 
 q4x: "Q4 extras" { class: phase }
 loop -> q4x -> q4a

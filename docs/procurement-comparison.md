@@ -2,7 +2,7 @@
 
 This page compares the [Strategic Budget Governance](../README.md) concept with typical **business budgeting** and **public procurement** processes used around the world.
 
-The main proposal borrows proven patterns — annual planning, competitive selection, milestone administration, independent audit — and arranges them for decentralized treasury governance. This document maps those patterns to familiar institutional practice so readers can see what is conventional, what is adapted, and what is specific to Cardano.
+The main proposal borrows proven patterns - annual planning, competitive selection, milestone administration, independent audit - and arranges them for decentralized treasury governance. This document maps those patterns to familiar institutional practice so readers can see what is conventional, what is adapted, and what is specific to Cardano.
 
 This is an **introductory reference**. It lists common elements, requirements, rules, and processes, and notes where comparable obligations typically appear in selected jurisdictions. Detailed country and sub-national profiles may be added later.
 
@@ -10,7 +10,7 @@ This is an **introductory reference**. It lists common elements, requirements, r
 
 ## Why Compare?
 
-Large organizations — governments, municipalities, state-owned enterprises, and major corporations — rarely ask their highest decision-makers to simultaneously:
+Large organizations - governments, municipalities, state-owned enterprises, and major corporations - rarely ask their highest decision-makers to simultaneously:
 
 * Set multi-year strategy
 * Draft procurement specifications
@@ -22,7 +22,7 @@ They **separate** these functions into planning cycles, procurement rules, contr
 
 The governance framework in this repository applies the same separation logic: DReps focus on strategy and trust allocation; vendors, administrators, and auditors compete within constitutional guardrails and an annual operational framework.
 
-Understanding how familiar jurisdictions structure similar work helps explain **why** the proposal uses annual frameworks, categories, tender lanes, administrator trust votes, and reputation systems — and **what** is intentionally different in a permissionless, on-chain context.
+Understanding how familiar jurisdictions structure similar work helps explain **why** the proposal uses annual frameworks, categories, tender lanes, administrator trust votes, and reputation systems - and **what** is intentionally different in a permissionless, on-chain context.
 
 ---
 
@@ -99,9 +99,9 @@ The following processes appear repeatedly in public procurement and corporate so
 * Audit of declared versus delivered contribution at project close
 * In-kind contributions quantified and subject to verification
 
-**Jurisdictional note:** Standard in EU Horizon and national R&D grants (*own contribution*, *Eigenmittel*); US federal grants (NSF, NIH) use cost sharing and matching requirements; World Bank and bilateral development finance use counterpart funding and leverage ratios. Classic price-competition tenders optimize total contract price rather than treasury share — but blended-finance and PPP models routinely combine public subsidy with private capital.
+**Jurisdictional note:** Standard in EU Horizon and national R&D grants (*own contribution*, *Eigenmittel*); US federal grants (NSF, NIH) use cost sharing and matching requirements; World Bank and bilateral development finance use counterpart funding and leverage ratios. Classic price-competition tenders optimize total contract price rather than treasury share - but blended-finance and PPP models routinely combine public subsidy with private capital.
 
-**Analog in this proposal:** Every treasury withdrawal declares `treasury_funding_ratio` and proposer contribution fields. DReps may filter and rank by ratio; categories may optionally cap maximum treasury share. Verification mechanics (escrow, milestone matching) may strengthen in later phases — see [Path Forward](path-forward.md).
+**Analog in this proposal:** Every treasury withdrawal declares `treasury_funding_ratio` and proposer contribution fields. DReps may filter and rank by ratio; categories may optionally cap maximum treasury share. Verification mechanics (escrow, milestone matching) may strengthen in later phases - see [Path Forward](path-forward.md).
 
 ---
 
@@ -125,7 +125,7 @@ See [Treasury Share and Proposer Co-Funding](../README.md#treasury-share-and-pro
 
 ## Jurisdiction Overview
 
-The table below summarizes **where comparable elements are typically required** — not a legal compliance checklist. Thresholds, exceptions, and enforcement differ widely. Consult national counsel for binding interpretation.
+The table below summarizes **where comparable elements are typically required** - not a legal compliance checklist. Thresholds, exceptions, and enforcement differ widely. Consult national counsel for binding interpretation.
 
 | Element | USA (federal) | Germany | Italy | UK | India | Japan | Ethiopia |
 | ------- | ------------- | ------- | ----- | -- | ----- | ----- | -------- |
@@ -140,11 +140,11 @@ The table below summarizes **where comparable elements are typically required** 
 | **SME / preference programs** | Small business set-asides | Mittelstand considerations | PMI quotas in Italian code | SME flexibilities in UK Act | MSME preferences (policy) | SME promotion policies | Local preference provisions |
 | **Framework / catalog contracts** | GWACs; IDIQ; schedules | Rahmenvereinbarungen | Accordi quadro | Framework agreements | GeM; rate contracts | Multiple-year framework contracts | Framework contracting allowed |
 
-**USA scope:** Federal row reflects **FAR-based** practice. US states (e.g. Wyoming) operate under **state procurement codes** with different thresholds, protest forums, and preference rules — see [planned US state profiles](#planned-extensions-us-states) below.
+**USA scope:** Federal row reflects **FAR-based** practice. US states (e.g. Wyoming) operate under **state procurement codes** with different thresholds, protest forums, and preference rules - see [planned US state profiles](#planned-extensions-us-states) below.
 
 **EU members:** Germany and Italy implement EU public procurement directives; the UK regime diverged post-Brexit but retains similar structural elements.
 
-**Enforcement reality:** Rules on paper ≠ uniform practice. Implementation capacity, digital infrastructure, and corruption risk vary — especially relevant when comparing mature OECD systems with emerging public financial management regimes.
+**Enforcement reality:** Rules on paper ≠ uniform practice. Implementation capacity, digital infrastructure, and corruption risk vary - especially relevant when comparing mature OECD systems with emerging public financial management regimes.
 
 ---
 
@@ -152,26 +152,26 @@ The table below summarizes **where comparable elements are typically required** 
 
 ### Aligns with common practice
 
-* **Separated roles** — strategy (DReps), execution competition (vendors), administration (trusted administrators), verification (auditors)
-* **Annual rhythm** — predictable cycle instead of ad-hoc proposal floods
-* **Structured comparison** — proposals within shared categories rather than incomparable one-offs
-* **Competition includes non-award** — Option 0 mirrors "no bid accepted / funds retained"
-* **Institutional memory** — reputation carries across budget years, analogous to vendor performance files
-* **Co-financing visibility** — treasury funding ratio and proposer contribution metadata, analogous to grant cost-sharing declarations
+* **Separated roles** - strategy (DReps), execution competition (vendors), administration (trusted administrators), verification (auditors)
+* **Annual rhythm** - predictable cycle instead of ad-hoc proposal floods
+* **Structured comparison** - proposals within shared categories rather than incomparable one-offs
+* **Competition includes non-award** - Option 0 mirrors "no bid accepted / funds retained"
+* **Institutional memory** - reputation carries across budget years, analogous to vendor performance files
+* **Co-financing visibility** - treasury funding ratio and proposer contribution metadata, analogous to grant cost-sharing declarations
 
 ### Differs by design
 
-* **No central procurement authority** — rules are constitutional and framework-level; no single ministry awards contracts
-* **Permissionless participation** — vendor eligibility is not limited to a pre-registered national supplier list
-* **On-chain transparency option** — publication and audit artifacts can be natively verifiable
-* **Delegated trust voting** — administrator allocation resembles framework-contract panel selection, but weighted by DRep trust votes
-* **Preference voting** — collective choice among multiple frameworks or proposals may use Condorcet-family methods rather than single-score evaluation committees
+* **No central procurement authority** - rules are constitutional and framework-level; no single ministry awards contracts
+* **Permissionless participation** - vendor eligibility is not limited to a pre-registered national supplier list
+* **On-chain transparency option** - publication and audit artifacts can be natively verifiable
+* **Delegated trust voting** - administrator allocation resembles framework-contract panel selection, but weighted by DRep trust votes
+* **Preference voting** - collective choice among multiple frameworks or proposals may use Condorcet-family methods rather than single-score evaluation committees
 
 ---
 
-## Planned Extensions — National Profiles
+## Planned Extensions - National Profiles
 
-The following sections are **reserved for future detailed write-ups**. Each profile will describe planning law, procurement procedure types, oversight institutions, SME treatment, digital platforms, and notable reform trends — then map them explicitly to framework elements in this repository.
+The following sections are **reserved for future detailed write-ups**. Each profile will describe planning law, procurement procedure types, oversight institutions, SME treatment, digital platforms, and notable reform trends - then map them explicitly to framework elements in this repository.
 
 | Profile | Primary legal / institutional anchors | Status |
 | ------- | --------------------------------------- | ------ |
@@ -203,7 +203,7 @@ The following sections are **reserved for future detailed write-ups**. Each prof
 
 ---
 
-## Planned Extensions — US States
+## Planned Extensions - US States
 
 US federal FAR practice does not govern state and local procurement. State codes differ materially on protest rights, cooperative purchasing, and preference programs.
 
@@ -221,15 +221,15 @@ US federal FAR practice does not govern state and local procurement. State codes
 
 When adding a national or state profile:
 
-1. Cite primary legislation and official portals — not secondary summaries alone.
+1. Cite primary legislation and official portals - not secondary summaries alone.
 2. Distinguish **legal requirement** from **common practice**.
 3. End each profile with a short **mapping table** to framework elements in the [README](../README.md).
-4. Keep jurisdictional content separate from normative governance recommendations — this page describes the world; the README proposes the model.
+4. Keep jurisdictional content separate from normative governance recommendations - this page describes the world; the README proposes the model.
 
 ---
 
 ## Further Reading
 
-* [Strategic Budget Governance — main proposal](../README.md)
-* [Preference Voting Methods](preference-voting.md) — how multi-option selection works in the framework
-* [Governance Diagrams](diagrams.md) — annual cycle, roles, treasury flow, and category lifecycle illustrations
+* [Strategic Budget Governance - main proposal](../README.md)
+* [Preference Voting Methods](preference-voting.md) - how multi-option selection works in the framework
+* [Governance Diagrams](diagrams.md) - annual cycle, roles, treasury flow, and category lifecycle illustrations

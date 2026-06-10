@@ -8,12 +8,12 @@ This repository is organized for **two-tier reading** and **future evolution** a
 
 | Layer | Document | Audience |
 | ----- | -------- | -------- |
-| **Overview** | [README — Overview](../README.md#overview) | Anyone — five-minute orientation |
-| **Concept narrative** | [README](../README.md) — full proposal | DReps, administrators, vendors evaluating direction |
+| **Overview** | [README - Overview](../README.md#overview) | Anyone - five-minute orientation |
+| **Concept narrative** | [README](../README.md) - full proposal | DReps, administrators, vendors evaluating direction |
 | **Path and staging** | [Path Forward](path-forward.md) | Those deciding adoption timing, pilot design, and phased rollout |
 | **Deep dives** | Linked docs below | Readers who need method or comparison detail |
 
-Start with the Overview, read the narrative in order (Parts I–VI in the README), then use linked docs where you need depth.
+Start with the Overview, read the narrative in order (Parts I-VI in the README), then use linked docs where you need depth.
 
 ---
 
@@ -24,7 +24,7 @@ Start with the Overview, read the narrative in order (Parts I–VI in the README
 | [README.md](../README.md) | Full concept: motivation, principles, annual model, roles, treasury, risks, conclusion |
 | [path-forward.md](path-forward.md) | Collaborative drafting goal, pilot vs full adoption, staged modules, legal review timing |
 | [procurement-comparison.md](procurement-comparison.md) | Mapping to business and public procurement patterns; co-financing and cost sharing |
-| [preference-voting.md](preference-voting.md) | Ranked choice, Condorcet, Schulze — methods and phases |
+| [preference-voting.md](preference-voting.md) | Ranked choice, Condorcet, Schulze - methods and phases |
 | [diagrams.md](diagrams.md) | Illustration sources and CI regeneration |
 
 ---
@@ -33,11 +33,11 @@ Start with the Overview, read the narrative in order (Parts I–VI in the README
 
 The README is intentionally monolithic while the idea is still forming. If DReps adopt collaborative refinement, these sections are natural candidates to **move into separate files** without changing substance:
 
-* **Operational model** — annual framework, categories, treasury share and co-funding metadata, quarterly competitions, refinement, challenges, funding slots
-* **Roles** — vendors, administrators, auditors, framework authors
-* **Infrastructure** — governance-as-data, business logic layer, treasury protection
+* **Operational model** - annual framework, categories, treasury share and co-funding metadata, quarterly competitions, refinement, challenges, funding slots
+* **Roles** - vendors, administrators, auditors, framework authors
+* **Infrastructure** - governance-as-data, business logic layer, treasury protection
 
-The README would then remain the **narrative spine** with summaries and links, similar to a technical specification index. Splits should happen when a section needs independent versioning or parallel editing by multiple contributors — not before the core direction is agreed.
+The README would then remain the **narrative spine** with summaries and links, similar to a technical specification index. Splits should happen when a section needs independent versioning or parallel editing by multiple contributors - not before the core direction is agreed.
 
 ---
 

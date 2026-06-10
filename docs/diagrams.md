@@ -51,8 +51,8 @@ scripts/
 
 Install [D2](https://d2lang.com) v0.6+:
 
-* **Windows** — download from [GitHub releases](https://github.com/terrastruct/d2/releases) or place `d2.exe` in `.tools/`
-* **macOS / Linux** — `curl -fsSL https://d2lang.com/install.sh | sh -s --`
+* **Windows** - download from [GitHub releases](https://github.com/terrastruct/d2/releases) or place `d2.exe` in `.tools/`
+* **macOS / Linux** - `curl -fsSL https://d2lang.com/install.sh | sh -s --`
 
 Verify:
 
@@ -103,7 +103,7 @@ If CI fails with “SVGs are out of date”, run the generate script locally and
 * Prefer **vertical** (`direction: down`) layouts for mobile readability
 * Keep labels short; expand detail in README prose rather than diagram nodes
 * Use `classes` in D2 for consistent colours across diagrams
-* Avoid long cross-diagram arrows — nest notes near the node they annotate
+* Avoid long cross-diagram arrows - nest notes near the node they annotate
 * Never edit `generated/*.svg` by hand; always change the `.d2` source
 
 ---

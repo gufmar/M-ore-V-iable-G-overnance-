@@ -42,17 +42,17 @@ Example with five options (including Option 0):
 ```text
 1. Framework B
 2. Framework D
-3. Option 0 — No Award / Treasury Retention
+3. Option 0 - No Award / Treasury Retention
 4. Framework A
 5. Framework C
 ```
 
 Rules that should be standardized:
 
-* **Minimum ranking** — DReps rank as many options as they have opinions about; unranked options are treated as tied below ranked ones
-* **Option 0 always present** — in funding competitions, treasury retention competes on equal footing (see [README — Treasury Funds Should Compete Against Treasury Retention](../README.md#treasury-funds-should-compete-against-treasury-retention))
-* **No bullet voting** — ranking one option does not automatically reject others; the counting method resolves the collective outcome
-* **Equal treatment** — all DRep ballots use the same format, human-readable and machine-readable
+* **Minimum ranking** - DReps rank as many options as they have opinions about; unranked options are treated as tied below ranked ones
+* **Option 0 always present** - in funding competitions, treasury retention competes on equal footing (see [README - Treasury Funds Should Compete Against Treasury Retention](../README.md#treasury-funds-should-compete-against-treasury-retention))
+* **No bullet voting** - ranking one option does not automatically reject others; the counting method resolves the collective outcome
+* **Equal treatment** - all DRep ballots use the same format, human-readable and machine-readable
 
 ---
 
@@ -64,7 +64,7 @@ Preference voting is intended for **multi-option selection** decisions:
 | -------- | ------- | ---------------- |
 | Q4 annual framework selection | Competing complete frameworks + Option 0 | Ranked preference (Condorcet-family or Schulze recommended) |
 | Quarterly category competition | Competing proposals within a lane + Option 0 | Ranked preference |
-| Administrator trust allocation | Multiple administrators with percentage weights | Trust allocation vote (separate mechanism — see below) |
+| Administrator trust allocation | Multiple administrators with percentage weights | Trust allocation vote (separate mechanism - see below) |
 
 **Confirmation votes** after refinement (pass / fail on a single matured proposal) may remain threshold-based yes/no votes. Preference voting is for choosing among alternatives, not for ratifying one finalized candidate.
 
@@ -90,14 +90,14 @@ Also called **Instant Runoff Voting (IRV)**.
 
 | DRep | 1st | 2nd | 3rd |
 | ---- | --- | --- | --- |
-| 1–4 | A | B | C |
-| 5–7 | B | C | A |
-| 8–9 | C | B | A |
+| 1-4 | A | B | C |
+| 5-7 | B | C | A |
+| 8-9 | C | B | A |
 | 10 | B | A | C |
 
-**Round 1** first preferences: A=4, B=4, C=2 — no majority.
+**Round 1** first preferences: A=4, B=4, C=2 - no majority.
 
-**Round 2** eliminate C (fewest). C's ballots transfer: DReps 8–9 go to B.
+**Round 2** eliminate C (fewest). C's ballots transfer: DReps 8-9 go to B.
 
 Result: A=4, B=6 → **B wins**.
 
@@ -106,7 +106,7 @@ Result: A=4, B=6 → **B wins**.
 * Easy to explain to voters
 * Familiar from municipal elections
 * Produces a single winner with majority support (relative to remaining candidates)
-* Works well with Option 0 — treasury retention can survive early rounds if enough DReps rank it highly
+* Works well with Option 0 - treasury retention can survive early rounds if enough DReps rank it highly
 
 ### Weaknesses
 
@@ -116,7 +116,7 @@ Result: A=4, B=6 → **B wins**.
 
 ### Best fit in this framework
 
-RCV is a reasonable **transition method** when explainability matters more than mathematical optimality — for example, early Q4 pilots using off-chain tooling.
+RCV is a reasonable **transition method** when explainability matters more than mathematical optimality - for example, early Q4 pilots using off-chain tooling.
 
 ---
 
@@ -136,17 +136,17 @@ Three frameworks, 9 DReps:
 
 | DRep | Ranking |
 | ---- | ------- |
-| 1–3 | A > B > C |
-| 4–6 | B > C > A |
-| 7–9 | C > A > B |
+| 1-3 | A > B > C |
+| 4-6 | B > C > A |
+| 7-9 | C > A > B |
 
 Pairwise results:
 
 | Matchup | A wins | B wins | C wins |
 | ------- | ------ | ------ | ------ |
-| A vs B | 6 | 3 | — |
-| B vs C | 6 | 3 | — |
-| C vs A | 6 | 3 | — |
+| A vs B | 6 | 3 | - |
+| B vs C | 6 | 3 | - |
+| C vs A | 6 | 3 | - |
 
 Every option beats one and loses one. There is **no Condorcet winner**. This is a **Condorcet cycle** (rock-paper-scissors).
 
@@ -161,7 +161,7 @@ When a cycle exists, a **Condorcet completion method** is needed to resolve the 
 
 ### Weaknesses
 
-* Cycles are possible — a completion rule is mandatory
+* Cycles are possible - a completion rule is mandatory
 * Harder to explain than RCV
 * Requires more computation and transparent publication of pairwise matrices
 
@@ -203,14 +203,14 @@ In a cycle A > B > C > A:
 ### Strengths
 
 * One of the most highly regarded Condorcet completion methods
-* Produces a complete ranking — useful when governance wants ordered results, not only a winner
+* Produces a complete ranking - useful when governance wants ordered results, not only a winner
 * Resistant to many forms of strategic manipulation
 * Used in practice by organizations including Wikimedia and some political parties
 
 ### Weaknesses
 
 * Most difficult method to explain to non-technical voters
-* Requires transparent tooling — voters should not need to compute beatpaths manually
+* Requires transparent tooling - voters should not need to compute beatpaths manually
 * Implementation must be auditable and published alongside results
 
 ### Best fit in this framework
@@ -232,7 +232,7 @@ Schulze is a strong **long-term recommendation** for framework and category sele
 | Handles cycles | N/A (elimination-based) | Needs completion rule | Built-in |
 | Full ranking output | Partial (elimination trace) | Depends on method | Yes |
 | Resistance to vote splitting | Good | Very good | Very good |
-| Implementation complexity | Low | Medium | Medium–high |
+| Implementation complexity | Low | Medium | Medium-high |
 | Auditability | Straightforward | Pairwise matrix publishable | Beatpath matrix publishable |
 | Transition suitability | Excellent | Good | Good with tooling |
 
@@ -310,8 +310,8 @@ This creates interoperability. Many tools can participate in a shared governance
 * [Condorcet method (Wikipedia)](https://en.wikipedia.org/wiki/Condorcet_method)
 * [Schulze method (Wikipedia)](https://en.wikipedia.org/wiki/Schulze_method)
 * [Instant-runoff voting (Wikipedia)](https://en.wikipedia.org/wiki/Instant-runoff_voting)
-* Tezos governance — staged proposal funneling and preference-based selection
-* Main proposal: [README — Preference Voting](../README.md#preference-voting)
+* Tezos governance - staged proposal funneling and preference-based selection
+* Main proposal: [README - Preference Voting](../README.md#preference-voting)
 
 ---
 
@@ -325,5 +325,5 @@ This creates interoperability. Many tools can participate in a shared governance
 | **Condorcet winner** | Option that beats every other option in pairwise comparisons |
 | **Condorcet cycle** | Situation where no single option wins all pairwise matchups |
 | **Beatpath** | Chain of pairwise victories connecting one option to another |
-| **Option 0** | No Award / Treasury Retention — competes against spending proposals |
+| **Option 0** | No Award / Treasury Retention - competes against spending proposals |
 | **Completion method** | Algorithm to resolve Condorcet cycles and select a winner |
