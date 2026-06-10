@@ -35,7 +35,8 @@ Understanding how familiar jurisdictions structure similar work helps explain **
 | **Procurement method selection** | Choose open tender, restricted procedure, framework agreement, etc. | Category type: open innovation vs tender-based vs outcome-defined |
 | **Publication / transparency** | Notice of opportunity, evaluation criteria, award | Structured governance objects; on-chain or publicly queryable records |
 | **Competition / anti-splitting** | Ensure fair comparison among bidders | Competing proposals within the same category; Option 0 (treasury retention) |
-| **Evaluation criteria** | Price, quality, experience, methodology | DRep preference voting; category KPIs; reputation scores |
+| **Evaluation criteria** | Price, quality, experience, methodology | DRep preference voting; category KPIs; reputation scores; [treasury funding ratio](../README.md#treasury-share-and-proposer-co-funding) |
+| **Co-financing / cost sharing** | Beneficiary own contribution, matching funds, leverage | Proposer contribution metadata; treasury funding ratio on every TW request |
 | **Conflict-of-interest rules** | Prevent biased award or administration | Constitutional constraints; competitive administrator and auditor roles |
 | **Contract administration** | Milestones, change control, payment holds | Administrator trust allocation; milestone-based disbursement |
 | **Audit & inspection** | Independent verification of spend and delivery | Competitive auditors; transparency levels; delivery history |
@@ -91,6 +92,35 @@ The following processes appear repeatedly in public procurement and corporate so
 
 **Jurisdictional note:** Central audit institutions (e.g. supreme audit bodies, comptroller functions) are common in public sectors; Ethiopia, India, Japan, and US states each maintain distinct audit chains.
 
+### 6. Co-financing and cost sharing
+
+* Applicant own contribution or matching funds declared in the application
+* Minimum co-financing thresholds by program type (research, SME, infrastructure)
+* Audit of declared versus delivered contribution at project close
+* In-kind contributions quantified and subject to verification
+
+**Jurisdictional note:** Standard in EU Horizon and national R&D grants (*own contribution*, *Eigenmittel*); US federal grants (NSF, NIH) use cost sharing and matching requirements; World Bank and bilateral development finance use counterpart funding and leverage ratios. Classic price-competition tenders optimize total contract price rather than treasury share — but blended-finance and PPP models routinely combine public subsidy with private capital.
+
+**Analog in this proposal:** Every treasury withdrawal declares `treasury_funding_ratio` and proposer contribution fields. DReps may filter and rank by ratio; categories may optionally cap maximum treasury share. Verification mechanics (escrow, milestone matching) may strengthen in later phases — see [Path Forward](path-forward.md).
+
+---
+
+## Co-financing and Cost Sharing
+
+Public grant programs rarely treat the government as the sole funder. Recurring patterns:
+
+| Pattern | Typical use | Terminology |
+| ------- | ----------- | ----------- |
+| **Mandatory minimum match** | R&D grants, regional SME subsidies | Cost sharing (US), co-financing (EU), Eigenmittel (Germany) |
+| **Scored contribution** | Competitive grant panels | Value for money, applicant resources, sustainability after grant |
+| **Counterpart funding** | Development banks, bilateral aid | Leverage ratio, counterpart obligation |
+| **In-kind allowance** | University and nonprofit grants | Matched effort, donated equipment or staff time |
+| **Milestone-matched release** | Stage-gate and tranched finance | Disbursement tied to verified co-payment |
+
+This proposal adopts a **lighter-touch** version for Cardano: co-funding is structured metadata from day one, not necessarily a universal minimum match. That fits a permissionless ecosystem while still enabling DReps to prefer proposals with verified proposer commitment when comparable scope and quality exist.
+
+See [Treasury Share and Proposer Co-Funding](../README.md#treasury-share-and-proposer-co-funding) for field definitions.
+
 ---
 
 ## Jurisdiction Overview
@@ -127,6 +157,7 @@ The table below summarizes **where comparable elements are typically required** 
 * **Structured comparison** — proposals within shared categories rather than incomparable one-offs
 * **Competition includes non-award** — Option 0 mirrors "no bid accepted / funds retained"
 * **Institutional memory** — reputation carries across budget years, analogous to vendor performance files
+* **Co-financing visibility** — treasury funding ratio and proposer contribution metadata, analogous to grant cost-sharing declarations
 
 ### Differs by design
 

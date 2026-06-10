@@ -13,6 +13,7 @@ At a high level, this concept proposes:
 * **Set annual priorities and categories first** — DReps choose a strategic framework for the budget year, not hundreds of unrelated proposals at once
 * **Run competitive procurement inside those categories** — vendors compete within shared scopes, lanes, and KPIs
 * **Make proposals comparable** — structured templates with human-readable narrative and machine-readable fields
+* **Surface proposer co-funding** — every treasury withdrawal declares what share of the project budget comes from treasury versus proposer contribution
 * **Require strong disclosure** — conflicts of interest and third-party relationships declared before votes
 * **Always include treasury retention** — Option 0 (no award) competes with every funding decision
 * **Separate roles** — strategists (DReps), executors (vendors), operators (administrators), verifiers (auditors) under constitutional guardrails
@@ -37,7 +38,7 @@ This README is a **raw concept draft** — concrete enough to test whether exper
 | ---- | -------- |
 | **I — Context** | [DRep Summary](#drepresentative-summary) · [Why Change?](#why-change) · [Decentralized Decisions](#decentralized-decisions-not-central-planning) |
 | **II — Principles** | [Core Principles](#core-principles) · [Constitutional vs Operational](#constitutional-layer-vs-operational-layer) · [Scope](#separation-from-other-governance-actions) |
-| **III — Annual Model** | [Framework Selection](#annual-governance-framework-selection) · [Categories](#category-definition) · [Governance as Data](#governance-as-data) · [Preference Voting](#preference-voting) · [Quarterly Competitions](#quarterly-category-competitions) · [Refinement & Challenges](#refinement-and-confirmation) |
+| **III — Annual Model** | [Framework Selection](#annual-governance-framework-selection) · [Categories](#category-definition) · [Governance as Data](#governance-as-data) · [Treasury Share & Co-Funding](#treasury-share-and-proposer-co-funding) · [Preference Voting](#preference-voting) · [Quarterly Competitions](#quarterly-category-competitions) · [Refinement & Challenges](#refinement-and-confirmation) |
 | **IV — Roles** | [Vendors](#vendors) · [Administrators](#administrators) · [Auditors](#auditors) |
 | **V — Treasury & Infrastructure** | [Lobbying](#lobbying-transparency) · [Treasury Protection](#treasury-protection) · [Business Logic Layer](#governance-business-logic-layer) · [Governance Minimization](#governance-minimization) |
 | **VI — Adoption** | [Transition](#transition-opportunity) · [Benefits](#benefits-by-participant) · [Risks](#risks-and-safeguards) · [Conclusion](#conclusion) |
@@ -112,6 +113,7 @@ However, experience has demonstrated several recurring challenges:
 * Weak institutional memory
 * High operational complexity
 * Difficulty comparing proposals
+* No structured signal for proposer co-funding — nearly all requests ask for full treasury funding, often with a security margin, with no rankable metadata for treasury share
 * Lack of structured strategic planning
 * Weak execution accountability for funded projects
 * Ambiguous budget phase boundaries under Net Change Limit (NCL) rounds
@@ -238,6 +240,20 @@ Proposals should not compete only against each other.
 They should compete against keeping the funds in the treasury.
 
 This creates treasury protection. Spending must be justified.
+
+---
+
+## Treasury Support Should Reflect Proposer Commitment
+
+Treasury funds are one source of project finance — not the only one.
+
+Proposers may bring partial funding: cash, in-kind resources, third-party grants, or matched contributions at milestones. When they do, that commitment is a legitimate competitive signal. DReps should be able to see and compare it rather than infer it from narrative text.
+
+Requesting 100% treasury funding remains valid. The objective is not to penalize full-funding requests by default, but to make treasury share a **structured, filterable field** on every withdrawal request so comparable proposals can be evaluated side by side.
+
+See [Treasury Share and Proposer Co-Funding](#treasury-share-and-proposer-co-funding) for field definitions and verification expectations.
+
+This creates comparability. Proposer commitment becomes visible before voting, not only after delivery failure.
 
 ---
 
@@ -484,7 +500,7 @@ Proposers compete by offering:
 
 * Execution plans
 * Teams
-* Budgets
+* Budgets and [treasury funding ratio](#treasury-share-and-proposer-co-funding)
 * Timelines
 * Governance structures
 
@@ -520,12 +536,12 @@ The proposed model asks participants to work with structured, queryable governan
 
 * Framework definitions with explicit budget fields
 * Category charters with declared KPIs
-* Proposals with dedicated cost, team, and deliverable fields
+* Proposals with dedicated cost, team, deliverable, and [treasury funding ratio](#treasury-share-and-proposer-co-funding) fields
 * Reputation scores, transparency levels, and audit registrations as machine-readable attributes
 
 A DRep should be able to say:
 
-> Show only proposals with transparency above 80%, reputation above 40, and complete cost breakdowns.
+> Show only proposals with transparency above 80%, reputation above 40%, treasury funding ratio at or below 75%, and complete cost breakdowns.
 
 and have wallets, portals, or AI-assisted tools filter hundreds of proposals instantly.
 
@@ -534,6 +550,72 @@ That is impossible when governance relies primarily on essays.
 Every governance artifact should be simultaneously human-readable and machine-readable. This is not a secondary technical detail — it is a core scalability mechanism aligned with Cardano's engineering culture.
 
 This creates scalability. Governance becomes queryable, filterable, and tool-assisted rather than document-interpretation at scale.
+
+---
+
+# Treasury Share and Proposer Co-Funding
+
+Current Cardano treasury governance has little structured relevance to proposers who bring partial funding and request only a percentage of support from the treasury. "Skin in the game" at submission time — value transferred or committed by the proposer before treasury disbursement — practically does not exist as comparable metadata. Nearly every proposer requests full funding, many with a security margin above estimated need.
+
+This proposal treats **treasury funding ratio** as rankable, filterable metadata on every treasury withdrawal (TW) request — whether submitted through structured category competitions or any direct withdrawal path.
+
+## The Signal
+
+| Concept | Definition |
+| ------- | ---------- |
+| **Total project budget** | Full cost to deliver the approved scope |
+| **Treasury requested** | ADA amount requested from the Cardano treasury |
+| **Treasury funding ratio** | `treasury_requested ÷ total_project_budget` — a value from greater than 0 up to 100% |
+| **Proposer contribution** | Funds or resources the proposer commits outside the treasury request |
+
+A proposal requesting 400,000 ADA for a 500,000 ADA project has a treasury funding ratio of 80%. The proposer contribution is 100,000 ADA (or equivalent in-kind value, declared separately).
+
+DReps may filter, sort, or weigh proposals by this ratio within a category lane. A lower ratio is not automatically better — but it is a real comparison dimension alongside cost, team, reputation, and deliverables.
+
+## Required Metadata Fields
+
+Every TW request should declare, in human- and machine-readable form:
+
+* `total_project_budget_ada`
+* `treasury_requested_ada`
+* `treasury_funding_ratio` (computed; stored for query consistency)
+* `proposer_contribution_ada`
+* `contribution_type` — cash, in_kind, third_party_grant, or mixed
+* `contribution_timing` — upfront, milestone_matched, or at_completion
+* `contribution_verification` — none, attestation, escrow, or on_chain_lock
+
+Narrative explanation remains required: what the proposer contributes, when it is committed, and how it relates to delivery risk.
+
+## Verification and Abuse Resistance
+
+Declared co-funding is only as credible as its verification path.
+
+* **Cash contributions** are strongest when locked in escrow or released milestone-for-milestone alongside treasury disbursement
+* **In-kind contributions** (team time, infrastructure, licenses) should be quantified and auditable; they are easier to overstate
+* **Third-party grants** should name the source and confirmation status
+* **Milestone-matched** contributions should bind treasury releases to verified proposer payments
+
+Co-funding at submission does not replace [delivery accountability](#delivery-accountability). It signals commitment before approval; execution accountability applies after approval.
+
+## Category-Level Policy (Optional)
+
+The annual framework may set category-specific expectations without making co-funding a global constitutional requirement:
+
+* Maximum treasury funding ratio for a lane (for example, innovation micro-grants capped at 80% treasury share)
+* Preference weighting in evaluation guidance (DRep portals may highlight proposals below a threshold)
+* Tender categories where proposers explicitly compete on execution **and** funding structure
+
+100% treasury requests remain eligible unless a category charter explicitly states otherwise.
+
+## Relation to Other Mechanisms
+
+* **Option 0** — treasury retention competes against spending; co-funding metadata helps DReps judge whether a partial award or no award is better value
+* **Refinement** — treasury funding ratio and contribution terms may be renegotiated during challenge and refinement
+* **Reputation** — verified co-funding delivery can strengthen standing; overstated contributions that fail verification should weaken it
+
+See [Procurement & Budget Process Comparison — Co-financing](docs/procurement-comparison.md#co-financing-and-cost-sharing) for how public grant and procurement systems handle comparable requirements.
+
+This creates leverage visibility. Treasury support becomes a measurable share of project finance rather than an implicit full subsidy.
 
 ---
 
@@ -560,6 +642,8 @@ See [Preference Voting Methods](docs/preference-voting.md) for a detailed compar
 The voting layer should stay **narrow and fit-for-purpose**. Cardano needs methods that work reliably for multi-option treasury decisions and balance stakeholder power — not an open arena for every experimental mechanism (seeking a trial ground). New methods should enter only when they solve a clearly identified gap in the core set above. See [Path Forward](docs/path-forward.md) for phased rollout.
 
 Preference voting applies to multi-option decisions such as Q4 framework selection and quarterly category competitions. Administrator trust allocation uses weighted distribution, not winner-take-all ranking. Post-refinement confirmation votes on a single proposal may remain threshold-based.
+
+DRep tools may sort or annotate competing options by [treasury funding ratio](#treasury-share-and-proposer-co-funding) before or during preference expression. The voting method itself need not hard-code ratio weighting — visibility and filterability are the first step.
 
 If native support is unavailable initially, off-chain systems such as Ekklesia may provide a transition path or become a permanent off-chain mechanism.
 
@@ -589,6 +673,7 @@ Proposal templates therefore include:
 * Planned duration
 * Expected completion date
 * Multi-year project flag
+* [Treasury funding ratio](#treasury-share-and-proposer-co-funding) and proposer contribution
 
 If a proposal represents only one phase of a larger initiative, this must be explicitly declared.
 
@@ -620,6 +705,7 @@ The proposal then enters:
 During this phase:
 
 * Budgets may be improved
+* [Treasury funding ratio](#treasury-share-and-proposer-co-funding) and proposer contribution terms may be adjusted — for example, a proposer increases co-funding after a budget challenge
 * Deliverables clarified
 * Similar proposals merged
 * Risks reduced
@@ -727,7 +813,8 @@ Proposal templates should be structured data objects rather than primarily narra
 
 Examples of dedicated fields:
 
-* Requested budget
+* Total project budget and treasury requested amount
+* Treasury funding ratio and proposer contribution (see [Treasury Share and Proposer Co-Funding](#treasury-share-and-proposer-co-funding))
 * Team size
 * FTE allocation
 * Hourly rates
@@ -753,7 +840,7 @@ DReps should be able to define their own evaluation criteria.
 
 For example:
 
-> Show only proposals with transparency above 80%, reputation above 40, and complete cost breakdowns.
+> Show only proposals with transparency above 80%, reputation above 40%, treasury funding ratio at or below 75%, and complete cost breakdowns.
 
 This creates scalability. Humans focus on judgment while tools assist with analysis.
 
@@ -839,7 +926,7 @@ Proposers must not unilaterally redefine scope, milestones, or KPIs after fundin
 
 When a proposer also acts as administrator, that dual role must not become a path to avoid delivery accountability: returning funds shortly before the next NCL or budget round must not substitute for delivering what was approved.
 
-This creates skin in the game. Execution failures follow the proposer into the next budget year rather than disappearing between flexible funding rounds.
+This creates post-award accountability — distinct from [proposer co-funding at submission](#treasury-share-and-proposer-co-funding), which signals commitment before approval. Execution failures follow the proposer into the next budget year rather than disappearing between flexible funding rounds.
 
 ---
 
@@ -1026,6 +1113,8 @@ Potential approaches include:
 3. Budget framework plus restricted exceptional withdrawals
 
 Experience suggests that routine ecosystem funding should ideally flow through structured budget governance.
+
+Whichever path remains available, every treasury withdrawal should use the same [treasury funding ratio metadata](#treasury-share-and-proposer-co-funding) so DReps can compare exceptional requests with structured category proposals.
 
 This remains an open governance question.
 

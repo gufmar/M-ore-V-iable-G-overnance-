@@ -48,6 +48,8 @@ Not every component needs to ship in year one.
 | --------- | ---------------- |
 | Annual framework and categories | Pilot or year 1 |
 | Structured proposals and Option 0 | Pilot or year 1 |
+| Treasury funding ratio metadata (filterable on every TW request) | Pilot or year 1 |
+| Co-funding verification (escrow, milestone matching, on-chain locks) | **Year 2+** — once core proposal schema and disbursement flow are stable |
 | Preference voting (ranked choice) | Pilot or year 1 |
 | Challenge and refinement process | Pilot or year 1 |
 | Vendor reputation and institutional memory | **Year 2+** — design separately once core procurement flow is stable |
