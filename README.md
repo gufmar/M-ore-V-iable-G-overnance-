@@ -2,6 +2,8 @@
 
 ## A Proposal for Scalable, Cost-Effective Treasury Governance
 
+**Short read (~10 min):** [README-short.md](README-short.md) — problem, concept, annual cycle, and roles in one sitting.
+
 ---
 
 ## Overview
@@ -28,7 +30,7 @@ This README is a **raw concept draft** - concrete enough to test whether experie
 
 **Collaborative drafting is the main goal of this project.** The author prepared this text to open discussion, not to deliver a finished reform. If the direction finds support, the next stage should bring more DReps directly into workshops, review, and fine-tuning.
 
-**Two-tier presentation:** the Overview above orients new readers; the narrative below walks from motivation through design to adoption. [Document Structure](docs/document-structure.md) explains how this material may split into separate files as the concept matures.
+**Layered presentation:** [README-short.md](README-short.md) is the ~10-minute entry point; the Overview above orients readers inside this document; the narrative below walks from motivation through design to adoption. [Document Structure](docs/document-structure.md) explains how this material may split into separate files as the concept matures.
 
 ---
 
@@ -1348,6 +1350,7 @@ This creates a governance system capable not only of decentralization, but of lo
 
 ## Further Reading
 
+* [README-short.md](README-short.md) - condensed proposal: problem, concept, annual cycle, roles (~10 min)
 * [Path Forward](docs/path-forward.md) - collaborative drafting, pilot vs full adoption, staged modules, legal review timing
 * [Document Structure](docs/document-structure.md) - how to read this repo and future doc splits
 * [Procurement & Budget Process Comparison](docs/procurement-comparison.md) - typical business and public procurement elements, rules, and jurisdictional anchors
