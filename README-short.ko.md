@@ -33,6 +33,26 @@ Cardano는 트레저리 거버넌스의 탈중앙화에 성공했습니다. DRep
 
 본 제안은 트레저리 거버넌스를 **제안 중심** 모델에서 **전략적 예산** 모델로 발전시킵니다.
 
+### 프레임워크와 카테고리의 의미
+
+**프레임워크**는 한 예산 연도의 완전한 전략 청사진입니다. 연간 트레저리 규모를 어떻게 나누는지, 어떤 **카테고리**가 존재하는지, 각 레인에 어떤 규칙이 적용되는지를 정의합니다. **카테고리**는 주제별 자금 영역 — 범위, KPI, 부분 예산 비율 — 이며, 개별 프로젝트가 아닙니다. 벤더는 DRep이 프레임워크를 채택한 **후에** 카테고리 **안에서** 프로젝트 슬롯을 경쟁합니다.
+
+설명 예시 — 동일 예산 연도를 위한 두 경쟁 Q4 제안 (가상 수치. 연간 규모 50M ADA 가정):
+
+| 카테고리 | 프레임워크 A — 「Builder-first」 | 프레임워크 B — 「Enterprise & security」 |
+| -------- | -------------------------------- | ---------------------------------------- |
+| Core infrastructure & reliability | 18M ADA (36%) | 14M ADA (28%) |
+| Developer tooling & SDKs | 12M ADA (24%) | — |
+| Education & onboarding | 8M ADA (16%) | 4M ADA (8%) |
+| Governance tooling & DRep support | 7M ADA (14%) | — |
+| Open innovation (넓은 범위) | 5M ADA (10%) | — |
+| Enterprise & real-world integrations | — | 15M ADA (30%) |
+| Community & events | — | 9M ADA (18%) |
+| Security audits & formal methods | — | 8M ADA (16%) |
+| **합계** | **50M ADA (100%)** | **50M ADA (100%)** |
+
+DRep은 **프레임워크 전체**에 대한 선호를 순위 매깁니다 — 카테고리를 따로 고르지 않습니다. 승리한 프레임워크가 해당 연도의 카테고리 지도와 부분 예산 비율을 확정합니다. 예: 프레임워크 A에서는 팀이 Q1에 「Developer tooling & SDKs」 안에서 지갑 SDK 프로젝트를 경쟁할 수 있음. 프레임워크 B에서는 그 카테고리가 없지만, 「Security audits & formal methods」가 지갑 라이브러리 감사를 자금 지원할 수 있음.
+
 개요:
 
 1. **연간 프레임워크 우선** — Q4에 경쟁 프레임워크가 카테고리, 예산, KPI, 운영 규칙을 다음 예산 연도용으로 정의. DRep은 무관한 수백 건의 제안이 아닌 선호 투표로 선택.

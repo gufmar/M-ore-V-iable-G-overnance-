@@ -31,6 +31,26 @@ Most large organizations separate strategic planning, budget allocation, procure
 
 This proposal evolves treasury governance from a **proposal-centric** model toward a **strategic budget** model.
 
+### What frameworks and categories mean
+
+A **framework** is a complete strategic blueprint for one budget year: how the annual treasury envelope is divided, which **categories** exist, and what rules apply in each lane. A **category** is a themed funding area — scope, KPIs, and a sub-budget share — not an individual project. Vendors compete for project slots **inside** categories only after DReps adopt a framework.
+
+Illustrative example — two competing Q4 proposals for the same budget year (fictional figures; assume a 50M ADA envelope):
+
+| Category | Framework A — "Builder-first" | Framework B — "Enterprise & security" |
+| -------- | ----------------------------- | ------------------------------------- |
+| Core infrastructure & reliability | 18M ADA (36%) | 14M ADA (28%) |
+| Developer tooling & SDKs | 12M ADA (24%) | — |
+| Education & onboarding | 8M ADA (16%) | 4M ADA (8%) |
+| Governance tooling & DRep support | 7M ADA (14%) | — |
+| Open innovation (broad scope) | 5M ADA (10%) | — |
+| Enterprise & real-world integrations | — | 15M ADA (30%) |
+| Community & events | — | 9M ADA (18%) |
+| Security audits & formal methods | — | 8M ADA (16%) |
+| **Total** | **50M ADA (100%)** | **50M ADA (100%)** |
+
+DReps rank their preferred **framework as a whole** — not each category separately. The winning framework fixes the category map and sub-budget shares for the year. Example: under Framework A, a team might compete in Q1 for a wallet-SDK project inside "Developer tooling & SDKs"; under Framework B, that category does not exist, but "Security audits & formal methods" might fund an audit of wallet libraries instead.
+
 At a high level:
 
 1. **Annual framework first** — In Q4, competing frameworks define categories, budgets, KPIs, and operating rules for the next budget year. DReps choose via preference voting, not hundreds of unrelated proposals at once.

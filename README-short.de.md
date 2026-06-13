@@ -33,6 +33,26 @@ Die meisten großen Organisationen trennen strategische Planung, Budgetzuweisung
 
 Dieser Vorschlag entwickelt Treasury-Governance von einem **proposal-zentrischen** Modell zu einem **strategischen Budget**-Modell.
 
+### Was Rahmenwerke und Kategorien bedeuten
+
+Ein **Rahmenwerk** ist ein vollständiger strategischer Blueprint für ein Budgetjahr: wie das jährliche Treasury-Volumen aufgeteilt wird, welche **Kategorien** existieren und welche Regeln in jeder Lane gelten. Eine **Kategorie** ist ein thematischer Finanzierungsbereich — Scope, KPIs und ein Teilbudget-Anteil — kein einzelnes Projekt. Anbieter konkurrieren um Projektslots **innerhalb** von Kategorien erst, nachdem DReps ein Rahmenwerk angenommen haben.
+
+Illustratives Beispiel — zwei konkurrierende Q4-Vorschläge für dasselbe Budgetjahr (fiktive Zahlen; Annahme: 50M ADA Volumen):
+
+| Kategorie | Rahmenwerk A — „Builder-first“ | Rahmenwerk B — „Enterprise & Security“ |
+| --------- | ------------------------------ | -------------------------------------- |
+| Core Infrastructure & Reliability | 18M ADA (36 %) | 14M ADA (28 %) |
+| Developer Tooling & SDKs | 12M ADA (24 %) | — |
+| Education & Onboarding | 8M ADA (16 %) | 4M ADA (8 %) |
+| Governance Tooling & DRep Support | 7M ADA (14 %) | — |
+| Open Innovation (breiter Scope) | 5M ADA (10 %) | — |
+| Enterprise & Real-World Integrations | — | 15M ADA (30 %) |
+| Community & Events | — | 9M ADA (18 %) |
+| Security Audits & Formal Methods | — | 8M ADA (16 %) |
+| **Summe** | **50M ADA (100 %)** | **50M ADA (100 %)** |
+
+DReps ranken ihr bevorzugtes **Rahmenwerk als Ganzes** — nicht jede Kategorie einzeln. Das gewinnende Rahmenwerk legt die Kategorie-Landschaft und Teilbudget-Anteile für das Jahr fest. Beispiel: Unter Rahmenwerk A konkurriert ein Team in Q1 um ein Wallet-SDK-Projekt in „Developer Tooling & SDKs“; unter Rahmenwerk B existiert diese Kategorie nicht, aber „Security Audits & Formal Methods“ könnte stattdessen ein Audit von Wallet-Bibliotheken finanzieren.
+
 Auf hoher Ebene:
 
 1. **Jährlicher Rahmen zuerst** — Im Q4 definieren konkurrierende Rahmenwerke Kategorien, Budgets, KPIs und Betriebsregeln für das nächste Budgetjahr. DReps wählen per Präferenzvoting, nicht über Hunderte unzusammenhängender Proposals auf einmal.
