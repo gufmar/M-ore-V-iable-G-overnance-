@@ -2,6 +2,8 @@
 
 ## A Proposal for Scalable, Cost-Effective Treasury Governance
 
+**Languages:** **English** · [Deutsch](README-short.de.md) · [日本語](README-short.ja.md) · [한국어](README-short.ko.md)
+
 **Full proposal:** [README.md](README.md) · **Adoption and pilot:** [Path Forward](docs/path-forward.md)
 
 ---
