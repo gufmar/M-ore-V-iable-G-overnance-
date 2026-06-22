@@ -10,6 +10,8 @@
 
 Cardano treasury governance works. The next step is making it **scalable and cost-effective** - so DReps decide direction without absorbing every operational role, and treasury spending consistently delivers ecosystem value for the funds committed.
 
+This proposal also frees the Constitution to focus on what constitutions do best: **lasting, stabilizing constitutional elements** - roles, rights, guardrails, timelines, and accountability mechanisms that hold over time. Executive and operational rulings that must continuously adapt to markets, technology, and ecosystem conditions belong in annual frameworks instead, so strategy and execution can evolve without repeated constitutional amendments.
+
 At a high level, this concept proposes:
 
 * **Set annual priorities and categories first** - DReps choose a strategic framework for the budget year, not hundreds of unrelated proposals at once
@@ -115,10 +117,13 @@ However, experience has demonstrated several recurring challenges:
 * Lack of structured strategic planning
 * Weak execution accountability for funded projects
 * Ambiguous budget phase boundaries under Net Change Limit (NCL) rounds
+* NCL budget lock when large approved projects under-deliver
 
 Experience with budget allocation so far has exposed a recurring execution gap. Funded proposers have sometimes unilaterally redefined project scope or deliverables after approval, or failed to deliver agreed outcomes in part or entirely. When an independent administrator withheld milestone payments, that was appropriate - but when a proposer who declared themselves as administrator simply returned unspent funds shortly before applying in the next NCL round, the ecosystem gained little durable accountability. Partial repayment must not substitute for delivery. Non-delivery and unilateral scope changes should carry significant consequences for the proposer and for the next budget year - not a soft reset between flexible funding rounds.
 
 Treasury budget allocation today operates through NCL rounds rather than fixed annual cycles. Each NCL can be replaced by the next NCL at any time. In practice this provides little stable orientation for DReps, proposers, or administrators planning multi-quarter work. Participants struggle to know which budget envelope is active, when it ends, or how current commitments relate to the next round. The phase boundary is flexible rather than predictable, which adds confusion rather than useful structure.
+
+The current NCL model and the first two years of experience exposed a further problem. Proposers with significant approved budgets have often failed to deliver fully or to get milestones signed off for a noticeable share of their project volume. Yet those amounts were already deducted from the NCL envelope and could not be reassigned to other proposers or projects. This creates a blocking, denying effect: treasury capacity appears consumed while value remains undelivered, and no one knows until late in the cycle how much a proposer may still deliver versus what will fall short. That is not only a breach of promised deliverables; it also inflicts economic harm on other ecosystem participants who were turned away because they did not fit within NCL limits.
 
 Many governance discussions focus on improving proposal assessment.
 

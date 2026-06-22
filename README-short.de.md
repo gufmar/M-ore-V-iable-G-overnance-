@@ -16,6 +16,8 @@ Cardano hat Treasury-Governance erfolgreich dezentralisiert. DReps, verfassungsr
 
 Die nächste Herausforderung ist nicht Legitimität — sondern **Skalierung und verantwortungsvolle Verwaltung**. Tausende ADA-Inhaber, Hunderte DReps, Administratoren, Prüfer, Anbieter und künftige Teilnehmer können nicht dauerhaft strategische Entscheidungen treffen, während sie in operativer Komplexität ertrinken.
 
+Dieser Vorschlag befreit die Verfassung zugleich, sich auf **dauerhafte, stabilisierende verfassungsrechtliche Elemente** zu konzentrieren — Rollen, Rechte, Leitplanken und Rechenschaft — und sich von exekutiven und operativen Regelungen zurückzuziehen, die sich laufend an Märkte und Gegebenheiten anpassen müssen. Diese operativen Entscheidungen gehören stattdessen in jährliche Rahmenwerke.
+
 Das heutige proposal-zentrische Modell erzeugt wiederkehrende Reibung:
 
 * **DRep-Überlastung** — Wähler sollen gleichzeitig als Strategen, Beschaffungsbeauftragte, Prüfer und Projektmanager agieren
@@ -24,6 +26,9 @@ Das heutige proposal-zentrische Modell erzeugt wiederkehrende Reibung:
 * **Kein strukturiertes Co-Funding-Signal** — fast alle Anträge fordern volle Treasury-Finanzierung ohne rankbare Metadaten zum Treasury-Anteil
 * **Unklare Budgetphasen** — Net-Change-Limit-Runden können sich ohne feste Übergabe ablösen; Planung über mehrere Quartale und Rechenschaftspflicht bleiben unklar
 * **Umsetzungslücken** — teilweise Rückzahlungen oder freiwillige Erstattungen vor der nächsten Runde dürfen Lieferung nicht ersetzen; Leistung soll ins nächste Budgetjahr tragen
+* **NCL-Budgetsperre** — große bewilligte Budgets, die unterliefern, binden dennoch NCL-Kapazität, die nicht neu zugewiesen werden kann; andere Antragsteller werden abgewiesen, während offene Lieferung bis spät im Zyklus unklar bleibt
+
+Antragsteller mit erheblichen bewilligten Budgets haben oft weder vollständig geliefert noch Meilensteine für einen spürbaren Anteil ihres Projektvolumens abzeichnen lassen — dennoch waren diese Beträge bereits vom NCL abgezogen und konnten keinem anderen Projekt zugewiesen werden. Das ist nicht nur fehlende Lieferung; es schadet ökonomisch Teilnehmern, die nicht in die NCL-Grenzen passten.
 
 Die meisten großen Organisationen trennen strategische Planung, Budgetzuweisung, Beschaffung, Administration, Prüfung und Ausführung. Cardano-Governance legt einen Großteil dieser Last derzeit direkt auf Wähler. Das skaliert nicht.
 

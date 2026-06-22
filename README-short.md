@@ -14,6 +14,8 @@ Cardano decentralized treasury governance successfully. DReps, constitutional gu
 
 The next challenge is not legitimacy — it is **scale and responsible stewardship**. Thousands of ADA holders, hundreds of DReps, administrators, auditors, vendors, and future participants cannot sustainably make strategic decisions while drowning in operational complexity.
 
+This proposal also frees the Constitution to focus on **lasting, stabilizing constitutional elements** — roles, rights, guardrails, and accountability — and step back from executive and operational rulings that must continuously adapt to markets and circumstances. Those operational choices belong in annual frameworks instead.
+
 Today's proposal-centric model creates recurring friction:
 
 * **DRep overload** — voters are asked to act as strategists, procurement officers, auditors, and project managers at once
@@ -22,6 +24,9 @@ Today's proposal-centric model creates recurring friction:
 * **No structured co-funding signal** — nearly all requests ask for full treasury funding with no rankable metadata for treasury share
 * **Ambiguous budget phases** — Net Change Limit rounds can supersede each other without fixed handover, so multi-quarter planning and accountability stay unclear
 * **Execution gaps** — partial fund returns or voluntary repayments before the next round must not substitute for delivery; performance should carry into the next budget year
+* **NCL budget lock** — large approved budgets that under-deliver still consume NCL capacity that cannot be reassigned; other proposers are denied while undelivered value stays unclear until late in the cycle
+
+Proposers with significant approved budgets have often failed to deliver fully or to sign off milestones for a noticeable share of their project volume — yet those amounts were already deducted from the NCL and could not go to other projects. That is not only missing deliverables; it economically harms participants who did not fit within NCL limits.
 
 Most large organizations separate strategic planning, budget allocation, procurement, administration, auditing, and execution. Cardano governance currently places much of that burden directly on voters. That does not scale.
 
