@@ -654,6 +654,8 @@ This creates better signal quality. Voters express priorities rather than binary
 
 Once the annual framework is approved, categories operate independently.
 
+Category subdivision lets DReps participate and influence outcomes where they feel competent, with no effect on proposals in other categories. In today's mixed setting, unrelated proposals share a single ballot: whether a DRep votes yes, no, or abstain, their choices on topics outside their competence still influence the relative results of other proposals on that ballot.
+
 Each quarter:
 
 * Proposals are submitted

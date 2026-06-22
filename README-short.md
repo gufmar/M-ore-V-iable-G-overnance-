@@ -59,7 +59,7 @@ DReps rank their preferred **framework as a whole** — not each category separa
 At a high level:
 
 1. **Annual framework first** — In Q4, competing frameworks define categories, budgets, KPIs, and operating rules for the next budget year. DReps choose via preference voting, not hundreds of unrelated proposals at once.
-2. **Quarterly competitions inside categories** — Vendors compete within shared scopes, lanes, and KPIs defined by the active framework.
+2. **Quarterly competitions inside categories** — Vendors compete within shared scopes, lanes, and KPIs defined by the active framework. Category-scoped votes let DReps participate and influence where they have competence, with no effect on proposals in other categories.
 3. **Comparable submissions** — Structured templates with human-readable narrative and machine-readable fields.
 4. **Treasury share and co-funding up front** — Every withdrawal declares what share comes from treasury versus proposer contribution.
 5. **Strong disclosure** — Conflicts of interest and third-party relationships declared before votes.

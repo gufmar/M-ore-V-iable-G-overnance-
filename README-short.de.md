@@ -61,7 +61,7 @@ DReps ranken ihr bevorzugtes **Rahmenwerk als Ganzes** — nicht jede Kategorie 
 Auf hoher Ebene:
 
 1. **Jährlicher Rahmen zuerst** — Im Q4 definieren konkurrierende Rahmenwerke Kategorien, Budgets, KPIs und Betriebsregeln für das nächste Budgetjahr. DReps wählen per Präferenzvoting, nicht über Hunderte unzusammenhängender Proposals auf einmal.
-2. **Vierteljährliche Wettbewerbe innerhalb von Kategorien** — Anbieter konkurrieren innerhalb gemeinsamer Scopes, Lanes und KPIs des aktiven Rahmenwerks.
+2. **Vierteljährliche Wettbewerbe innerhalb von Kategorien** — Anbieter konkurrieren innerhalb gemeinsamer Scopes, Lanes und KPIs des aktiven Rahmenwerks. Kategoriebezogene Votes erlauben DReps, dort mitzuwirken und Einfluss zu nehmen, wo sie Kompetenz haben — ohne Wirkung auf Proposals in anderen Kategorien.
 3. **Vergleichbare Einreichungen** — Strukturierte Vorlagen mit menschenlesbarer Narrative und maschinenlesbaren Feldern.
 4. **Treasury-Anteil und Co-Funding von Anfang an** — Jede Abhebung deklariert, welcher Anteil aus dem Treasury und welcher aus Beiträgen des Antragstellers stammt.
 5. **Starke Offenlegung** — Interessenkonflikte und Drittbeziehungen vor Abstimmungen deklariert.
