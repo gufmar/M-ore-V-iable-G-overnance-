@@ -2,7 +2,7 @@
 
 ## Ein Vorschlag für skalierbare, kosteneffiziente Treasury-Governance
 
-**Sprachen:** [English](README-short.md) · **Deutsch** · [日本語](README-short.ja.md) · [한국어](README-short.ko.md)
+**Sprachen:** [English](README-short.md) · **Deutsch** · [Italiano](README-short.it.md) · [日本語](README-short.ja.md) · [한국어](README-short.ko.md)
 
 > Verlinkte ausführliche Dokumente ([README.md](README.md), [docs/](docs/)) sind derzeit **auf Englisch**.
 

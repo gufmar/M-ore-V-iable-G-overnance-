@@ -18,7 +18,7 @@ This repository is organized for **layered reading** and **future evolution** as
 
 | ----- | -------- | -------- |
 
-| **Quick read** | [README-short.md](../README-short.md) ([DE](../README-short.de.md) · [JA](../README-short.ja.md) · [KO](../README-short.ko.md)) | DReps and first-time readers — problem, concept, and annual cycle (~10 min) |
+| **Quick read** | [README-short.md](../README-short.md) ([DE](../README-short.de.md) · [IT](../README-short.it.md) · [JA](../README-short.ja.md) · [KO](../README-short.ko.md)) | DReps and first-time readers — problem, concept, and annual cycle (~10 min) |
 
 | **Overview** | [README — Overview](../README.md#overview) | Anyone needing a five-minute orientation inside the full doc |
 
@@ -48,6 +48,7 @@ Start with [README-short.md](../README-short.md) for a first pass. Read [README.
 
 | [README-short.md](../README-short.md) | Condensed proposal: problem, concept, budget year, principles, roles, risks summary |
 | [README-short.de.md](../README-short.de.md) | German translation of the short read (links to English full docs) |
+| [README-short.it.md](../README-short.it.md) | Italian translation of the short read (links to English full docs) |
 | [README-short.ja.md](../README-short.ja.md) | Japanese translation of the short read (links to English full docs) |
 | [README-short.ko.md](../README-short.ko.md) | Korean translation of the short read (links to English full docs) |
 

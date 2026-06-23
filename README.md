@@ -2,7 +2,7 @@
 
 ## A Proposal for Scalable, Cost-Effective Treasury Governance
 
-**Short read (~10 min):** [README-short.md](README-short.md) ([DE](README-short.de.md) · [JA](README-short.ja.md) · [KO](README-short.ko.md)) — problem, concept, annual cycle, and roles in one sitting.
+**Short read (~10 min):** [README-short.md](README-short.md) ([DE](README-short.de.md) · [IT](README-short.it.md) · [JA](README-short.ja.md) · [KO](README-short.ko.md)) — problem, concept, annual cycle, and roles in one sitting.
 
 ---
 

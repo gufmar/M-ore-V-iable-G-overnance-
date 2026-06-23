@@ -2,7 +2,7 @@
 
 ## スケーラブルで費用対効果の高いトレジャリー・ガバナンスの提案
 
-**言語:** [English](README-short.md) · [Deutsch](README-short.de.md) · **日本語** · [한국어](README-short.ko.md)
+**言語:** [English](README-short.md) · [Deutsch](README-short.de.md) · [Italiano](README-short.it.md) · **日本語** · [한국어](README-short.ko.md)
 
 > リンク先の詳細ドキュメント（[README.md](README.md)、[docs/](docs/)）は現時点で **英語** です。
 

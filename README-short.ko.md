@@ -2,7 +2,7 @@
 
 ## 확장 가능하고 비용 효율적인 트레저리 거버넌스 제안
 
-**언어:** [English](README-short.md) · [Deutsch](README-short.de.md) · [日本語](README-short.ja.md) · **한국어**
+**언어:** [English](README-short.md) · [Deutsch](README-short.de.md) · [Italiano](README-short.it.md) · [日本語](README-short.ja.md) · **한국어**
 
 > 연결된 상세 문서([README.md](README.md), [docs/](docs/))는 현재 **영어**로 작성되어 있습니다.
 
